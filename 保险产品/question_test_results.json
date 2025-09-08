@@ -1,0 +1,280 @@
+{
+  "Product Information": [
+    {
+      "field": "Insurer Entity Name",
+      "answered": true,
+      "confidence": 0.8301220733333332,
+      "answer": "The insurer entity name mentioned in the provided context is Sun Life in Hong Kong Limited. This information is based on the excerpt from the RoyalFortune_Product Brochure_EN.pdf, Page 0, where it sta",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Insurer Financial Strength Rating(s)",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The insurer financial strength ratings are not explicitly mentioned in the provided context from the insurance document excerpts.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Issuing Jurisdiction",
+      "answered": true,
+      "confidence": 0.8703668499999999,
+      "answer": "The issuing jurisdiction is not explicitly mentioned in the provided document context.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Product Name",
+      "answered": true,
+      "confidence": 0.8195696,
+      "answer": "The product name is RoyalFortune, as mentioned in the provided insurance document excerpts.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Product Base",
+      "answered": true,
+      "confidence": 0.8195696,
+      "answer": "The product base mentioned in the provided context is RoyalFortune. It is an insurance product that offers a combination of guaranteed and non-guaranteed potential gains to boost wealth accumulation w",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Product Type",
+      "answered": true,
+      "confidence": 0.8195696,
+      "answer": "Based on the provided context, the product type is RoyalFortune, which is an insurance product offered by Sun Life HK. The product focuses on providing long-term wealth accumulation, financial flexibi",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Product Asset Manager",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The provided document excerpts do not specify the name or details of the product asset manager.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Product Asset Custodian",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The provided context does not specify who the product asset custodian is.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Product Asset Mix",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The product asset mix for the RoyalFortune insurance product is as follows:\n- Fixed Income Assets: 80%-100%\n- Non-Fixed Income Assets: 0%-20%\n\n(Source: RoyalFortune_Product Brochure_EN.pdf, Page 0)",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    }
+  ],
+  "Plan Details": [
+    {
+      "field": "Issue Age",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The issue age range for the RoyalFortune insurance plan is from Age 0 to 80. The age methodology for the benefit term is defined as \"To age 120 of the current insured or to 120 years since the issue\" ",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Number of Insured Lives",
+      "answered": false,
+      "confidence": 0.8416735333333334,
+      "answer": "The number of insured lives is not mentioned in the provided context from the RoyalFortune_Product Brochure_EN.pdf document.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Change of Life Assured Feature(s)",
+      "answered": false,
+      "confidence": 1.0,
+      "answer": "The provided context does not mention the specific details or features related to the \"change of life assured\" in the insurance product brochure for RoyalFortune.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Minimum Premium",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The minimum Notional Amount for the RoyalFortune insurance policy is USD 125,000, as stated in the document excerpt from Page 15 of the RoyalFortune_Product Brochure_EN.pdf. This amount is equivalent ",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Maximum Premium",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The maximum premium or sum assured is not explicitly mentioned in the provided context from the insurance document excerpts.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Policy Term",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The policy term is not explicitly mentioned in the provided context from the insurance document excerpts.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Premium Term(s)",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The premium terms for the RoyalFortune insurance policy include a levy on insurance premiums for all new and inforce policies collected by the Insurance Authority starting from January 1, 2018. Additi",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Prepayment Applicable",
+      "answered": true,
+      "confidence": 0.6102842766666666,
+      "answer": "Based on the provided context from the insurance document excerpts of RoyalFortune_Product Brochure_EN.pdf, there is no specific mention of prepayment being applicable. The document primarily discusse",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Policy Currency(ies)",
+      "answered": true,
+      "confidence": 0.9777004,
+      "answer": "The policy currencies are not explicitly mentioned in the provided context.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Withdrawal Features",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The provided context does not specify the withdrawal features of the RoyalFortune insurance product.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Death Settlement Feature(s)",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The death settlement features of the RoyalFortune insurance policy include comprehensive Death Benefit Settlement Options. There are 6 types of Death Benefit Settlement Options available that can be t",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    }
+  ],
+  "For Participating Whole of Life": [
+    {
+      "field": "Day 1 GCV",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The Day 1 Guaranteed Cash Value (GCV) is equal to 80% of the single premium as the policy starts, as mentioned in the provided context from the RoyalFortune product brochure.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Total Surrender Value Components",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The total surrender value components mentioned in the provided context are the Guaranteed Cash Coupon with interest and the Projected total surrender value. The Guaranteed Cash Coupon with interest am",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Total Death Benefit Components",
+      "answered": true,
+      "confidence": 1.0,
+      "answer": "The total death benefit components for the RoyalFortune plan are the higher of the Guaranteed Cash Value or the Total premium paid. This information is sourced from the RoyalFortune_Product Brochure_E",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    }
+  ],
+  "Other Details": [
+    {
+      "field": "Backdating Availability",
+      "answered": false,
+      "confidence": 0.8485373666666666,
+      "answer": "The provided document excerpts do not mention anything about backdating of policies. Therefore, based on the context provided, it is not possible to determine if backdating is available for policies o",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Non-Medical Limit",
+      "answered": false,
+      "confidence": 1.0,
+      "answer": "The non-medical limit is not mentioned in the provided context from the insurance document excerpts.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Additional Benefits",
+      "answered": false,
+      "confidence": 1.0,
+      "answer": "The provided document excerpts do not mention specific details about additional benefits like terminal illness or accidental death.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    },
+    {
+      "field": "Contract Governing Law",
+      "answered": true,
+      "confidence": 0.63207635,
+      "answer": "The contract governing law is not explicitly mentioned in the provided context from the RoyalFortune product brochure excerpts.",
+      "sources": [
+        "RoyalFortune_Product Brochure_EN.pdf",
+        "RoyalFortune_Product Brochure_EN.pdf"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保险RAG系统 - 企业PoC演示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        @media (max-width: 1024px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .panel {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .panel h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        .upload-area {
+            border: 2px dashed #667eea;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            background: #f8f9ff;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .upload-area:hover {
+            background: #eef1ff;
+            border-color: #764ba2;
+        }
+        
+        .upload-area.dragging {
+            background: #e0e6ff;
+            border-color: #764ba2;
+        }
+        
+        .upload-icon {
+            font-size: 48px;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 12px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .results {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        .result-item {
+            background: #f8f9ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .result-doc {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .result-score {
+            background: #667eea;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .result-content {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .result-content mark {
+            background: #ffeb3b;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .qa-answer {
+            background: #f0f7ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .qa-answer h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .qa-answer p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .stat-card {
+            background: #f8f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 28px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .loading.active {
+            display: block;
+        }
+        
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .doc-list {
+            margin-top: 20px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .doc-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: #f8f9ff;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+        
+        .doc-name {
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .doc-chunks {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            font-size: 16px;
+            position: relative;
+            transition: color 0.3s;
+        }
+        
+        .tab.active {
+            color: #667eea;
+        }
+        
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #667eea;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🚀 保险文档智能RAG系统</h1>
+            <p>企业级PoC演示 - 基于ElasticSearch的混合检索 + GPT问答</p>
+        </div>
+        
+        <!-- Main Grid -->
+        <div class="main-grid">
+            <!-- Left Panel - Upload & Stats -->
+            <div class="panel">
+                <h2>📊 系统控制台</h2>
+                
+                <!-- Upload Area -->
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📁</div>
+                    <p>点击或拖拽PDF文件到此处上传</p>
+                    <input type="file" id="fileInput" accept=".pdf" style="display: none;">
+                </div>
+                
+                <!-- Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="docCount">0</div>
+                        <div class="stat-label">文档数</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="chunkCount">0</div>
+                        <div class="stat-label">文档块</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="indexSize">0 MB</div>
+                        <div class="stat-label">索引大小</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="responseTime">0 ms</div>
+                        <div class="stat-label">响应时间</div>
+                    </div>
+                </div>
+                
+                <!-- Document List -->
+                <h3 style="margin-top: 30px; margin-bottom: 15px;">📚 已索引文档</h3>
+                <div class="doc-list" id="docList">
+                    <p style="color: #999; text-align: center;">暂无文档</p>
+                </div>
+            </div>
+            
+            <!-- Right Panel - Search & QA -->
+            <div class="panel">
+                <h2>🔍 智能搜索与问答</h2>
+                
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class="tab active" onclick="switchTab('search')">搜索模式</button>
+                    <button class="tab" onclick="switchTab('qa')">问答模式</button>
+                </div>
+                
+                <!-- Search Tab -->
+                <div id="searchTab" class="tab-content active">
+                    <div class="search-box">
+                        <input type="text" class="search-input" id="searchInput" 
+                               placeholder="输入搜索关键词，如：minimum premium, 保费, Sun Life">
+                        <button class="btn" onclick="performSearch()">搜索</button>
+                    </div>
+                    
+                    <div class="loading" id="searchLoading">
+                        <div class="spinner"></div>
+                        <p style="margin-top: 10px;">搜索中...</p>
+                    </div>
+                    
+                    <div class="results" id="searchResults"></div>
+                </div>
+                
+                <!-- QA Tab -->
+                <div id="qaTab" class="tab-content">
+                    <div class="search-box">
+                        <input type="text" class="search-input" id="qaInput" 
+                               placeholder="输入问题，如：What is the minimum premium for RoyalFortune?">
+                        <button class="btn" onclick="askQuestion()">提问</button>
+                    </div>
+                    
+                    <div class="loading" id="qaLoading">
+                        <div class="spinner"></div>
+                        <p style="margin-top: 10px;">AI思考中...</p>
+                    </div>
+                    
+                    <div id="qaResults"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const API_BASE = 'http://localhost:8000/api';
+        
+        // 初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            loadStats();
+            loadDocuments();
+            setupUpload();
+            
+            // 定时刷新统计
+            setInterval(loadStats, 5000);
+        });
+        
+        // 加载统计信息
+        async function loadStats() {
+            try {
+                const response = await fetch(`${API_BASE}/stats`);
+                const stats = await response.json();
+                
+                document.getElementById('docCount').textContent = stats.total_documents;
+                document.getElementById('chunkCount').textContent = stats.total_chunks;
+                document.getElementById('indexSize').textContent = stats.index_size;
+            } catch (error) {
+                console.error('Failed to load stats:', error);
+            }
+        }
+        
+        // 加载文档列表
+        async function loadDocuments() {
+            try {
+                const response = await fetch(`${API_BASE}/documents`);
+                const data = await response.json();
+                
+                const docList = document.getElementById('docList');
+                if (data.documents.length === 0) {
+                    docList.innerHTML = '<p style="color: #999; text-align: center;">暂无文档</p>';
+                } else {
+                    docList.innerHTML = data.documents.map(doc => `
+                        <div class="doc-item">
+                            <span class="doc-name">${doc.doc_name}</span>
+                            <span class="doc-chunks">${doc.chunk_count} 块</span>
+                        </div>
+                    `).join('');
+                }
+            } catch (error) {
+                console.error('Failed to load documents:', error);
+            }
+        }
+        
+        // 设置文件上传
+        function setupUpload() {
+            const uploadArea = document.getElementById('uploadArea');
+            const fileInput = document.getElementById('fileInput');
+            
+            uploadArea.addEventListener('click', () => fileInput.click());
+            
+            fileInput.addEventListener('change', (e) => {
+                if (e.target.files.length > 0) {
+                    uploadFile(e.target.files[0]);
+                }
+            });
+            
+            // 拖拽上传
+            uploadArea.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                uploadArea.classList.add('dragging');
+            });
+            
+            uploadArea.addEventListener('dragleave', () => {
+                uploadArea.classList.remove('dragging');
+            });
+            
+            uploadArea.addEventListener('drop', (e) => {
+                e.preventDefault();
+                uploadArea.classList.remove('dragging');
+                
+                if (e.dataTransfer.files.length > 0) {
+                    uploadFile(e.dataTransfer.files[0]);
+                }
+            });
+        }
+        
+        // 上传文件
+        async function uploadFile(file) {
+            if (!file.name.endsWith('.pdf')) {
+                alert('请上传PDF文件');
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('file', file);
+            
+            try {
+                const response = await fetch(`${API_BASE}/upload`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                alert(`文件上传成功！\n文档ID: ${result.doc_id}\n正在后台处理...`);
+                
+                // 刷新文档列表
+                setTimeout(() => {
+                    loadDocuments();
+                    loadStats();
+                }, 3000);
+            } catch (error) {
+                alert('上传失败: ' + error.message);
+            }
+        }
+        
+        // 切换标签
+        function switchTab(tab) {
+            // 切换标签状态
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // 切换内容
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.getElementById(tab + 'Tab').classList.add('active');
+        }
+        
+        // 执行搜索
+        async function performSearch() {
+            const query = document.getElementById('searchInput').value;
+            if (!query) return;
+            
+            const loading = document.getElementById('searchLoading');
+            const results = document.getElementById('searchResults');
+            
+            loading.classList.add('active');
+            results.innerHTML = '';
+            
+            const startTime = Date.now();
+            
+            try {
+                const response = await fetch(`${API_BASE}/search`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({query: query, size: 10})
+                });
+                
+                const data = await response.json();
+                const elapsed = Date.now() - startTime;
+                
+                document.getElementById('responseTime').textContent = elapsed + ' ms';
+                
+                if (data.length === 0) {
+                    results.innerHTML = '<p style="text-align: center; color: #999;">未找到相关结果</p>';
+                } else {
+                    results.innerHTML = data.map(item => `
+                        <div class="result-item">
+                            <div class="result-header">
+                                <span class="result-doc">${item.doc_name} - 第${item.page_num}页</span>
+                                <span class="result-score">${item.score.toFixed(2)}</span>
+                            </div>
+                            <div class="result-content">
+                                ${item.highlight || item.content}
+                            </div>
+                        </div>
+                    `).join('');
+                }
+            } catch (error) {
+                results.innerHTML = '<p style="color: red;">搜索失败: ' + error.message + '</p>';
+            } finally {
+                loading.classList.remove('active');
+            }
+        }
+        
+        // 提问
+        async function askQuestion() {
+            const question = document.getElementById('qaInput').value;
+            if (!question) return;
+            
+            const loading = document.getElementById('qaLoading');
+            const results = document.getElementById('qaResults');
+            
+            loading.classList.add('active');
+            results.innerHTML = '';
+            
+            const startTime = Date.now();
+            
+            try {
+                const response = await fetch(`${API_BASE}/qa`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        question: question,
+                        include_sources: true
+                    })
+                });
+                
+                const data = await response.json();
+                const elapsed = Date.now() - startTime;
+                
+                document.getElementById('responseTime').textContent = elapsed + ' ms';
+                
+                results.innerHTML = `
+                    <div class="qa-answer">
+                        <h3>🤖 AI回答（置信度: ${(data.confidence * 100).toFixed(1)}%）</h3>
+                        <p>${data.answer}</p>
+                    </div>
+                    
+                    ${data.sources.length > 0 ? `
+                        <h3 style="margin: 20px 0 10px;">📌 信息来源</h3>
+                        ${data.sources.map(source => `
+                            <div class="result-item">
+                                <div class="result-header">
+                                    <span class="result-doc">${source.doc_name} - 第${source.page_num}页</span>
+                                    <span class="result-score">${source.score.toFixed(2)}</span>
+                                </div>
+                                <div class="result-content">
+                                    ${source.content}
+                                </div>
+                            </div>
+                        `).join('')}
+                    ` : ''}
+                `;
+            } catch (error) {
+                results.innerHTML = '<p style="color: red;">提问失败: ' + error.message + '</p>';
+            } finally {
+                loading.classList.remove('active');
+            }
+        }
+        
+        // 回车提交
+        document.getElementById('searchInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') performSearch();
+        });
+        
+        document.getElementById('qaInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') askQuestion();
+        });
+    </script>
+</body>
+</html>

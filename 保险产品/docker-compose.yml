@@ -1,0 +1,60 @@
+name: rag-poc
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+    container_name: es-rag-poc
+    environment:
+      - node.name=es-rag-poc
+      - cluster.name=rag-cluster
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+      - ./elasticsearch/plugins:/usr/share/elasticsearch/plugins
+      - ./elasticsearch/config/analysis:/usr/share/elasticsearch/config/analysis
+    ports:
+      - 9200:9200
+      - 9300:9300
+    networks:
+      - rag-network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9200/_cluster/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.11.0
+    container_name: kibana-rag-poc
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - "SERVER_NAME=kibana-rag-poc"
+      - xpack.security.enabled=false
+    ports:
+      - 5601:5601
+    networks:
+      - rag-network
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5601/api/status || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+volumes:
+  es_data:
+    driver: local
+
+networks:
+  rag-network:
+    driver: bridge

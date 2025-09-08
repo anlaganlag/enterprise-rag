@@ -1,0 +1,14 @@
+# ElasticSearch RAG系统依赖
+elasticsearch==8.11.0
+elasticsearch[async]==8.11.0
+pdfplumber==0.10.3
+PyPDF2==3.0.1
+openai==0.28.1
+python-dotenv==1.0.0
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+aiofiles==23.2.1
+numpy==1.24.3
+rank-bm25==0.2.2
+jieba==0.42.1
