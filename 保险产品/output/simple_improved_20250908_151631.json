@@ -1,0 +1,155 @@
+{
+  "results": {
+    "Insurer Entity Name": {
+      "answer": "Insurers by Insurance",
+      "confidence": "High",
+      "method": "direct",
+      "source": "RoyalFortune_Product Brochure_EN.pdf"
+    },
+    "Product Name": {
+      "answer": "Plan ",
+      "confidence": "High",
+      "method": "direct",
+      "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃.pdf"
+    },
+    "Minimum Premium": {
+      "answer": "USD125,000",
+      "confidence": "High",
+      "method": "direct",
+      "source": "RoyalFortune_Product Brochure_EN.pdf"
+    },
+    "Maximum Premium": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Policy Currency": {
+      "answer": "Currency USD",
+      "confidence": "High",
+      "method": "direct",
+      "source": "RoyalFortune_Product Brochure_EN.pdf"
+    },
+    "Policy Term": {
+      "answer": "termination of the\nOriginal Policy",
+      "confidence": "High",
+      "method": "direct",
+      "source": "RoyalFortune_Product Brochure_EN.pdf"
+    },
+    "Issue Age": {
+      "answer": "Age 0-80",
+      "confidence": "High",
+      "method": "direct",
+      "source": "RoyalFortune_Product Brochure_EN.pdf"
+    },
+    "Premium Term(s)": {
+      "answer": "Single premium",
+      "confidence": "Low",
+      "method": "gpt",
+      "source": "RoyalFortune_Product Brochure_EN.pdf"
+    },
+    "Number of Insured Lives": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Product Type": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Issuing Jurisdiction": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Withdrawal Features": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Death Settlement Feature(s)": {
+      "answer": "- Full payment in a lump-sum\n- Full payment by installments\n- Full amount to be paid in monthly or annual mode ranging from 2-50 years\n- Partial payment installments\n- Partial amount to be paid in lump-sum first and the remaining to be paid by installments\n- Partial payment by installments till the designated age of beneficiary\n- Partial amount to be paid by installments before the designated age of the beneficiary and the remaining (if any) to be paid in",
+      "confidence": "Low",
+      "method": "gpt",
+      "source": "RoyalFortune_Product Brochure_EN.pdf"
+    },
+    "Additional Benefits": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Contract Governing Law": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Product Asset Mix": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Backdating Availability?": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Non-Medical Limit": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Prepayment Applicable?": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Policy Currency(ies)": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Issue Age and Age Methodology": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Change of Life Assured Feature(s)": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "gpt",
+      "source": "RoyalFortune_Product Brochure_EN.pdf"
+    },
+    "Day 1 GCV": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Total Surrender Value Components": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Total Death Benefit Components": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "gpt",
+      "source": "RoyalFortune_Product Brochure_EN.pdf"
+    },
+    "Product Base": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    },
+    "Product Asset Manager": {
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "method": "none"
+    }
+  },
+  "summary": {
+    "total": 27,
+    "success": 8,
+    "rate": "29.6%",
+    "cost": "$0.0814"
+  }
+}

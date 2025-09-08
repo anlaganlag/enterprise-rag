@@ -1,0 +1,606 @@
+{
+  "results": {
+    "Insurer Entity Name": {
+      "category": "Product Information",
+      "answer": "Sun Life",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 17,
+          "score": 0.42379472405332774
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 2,
+          "score": 0.39911052811797504
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 15,
+          "score": 0.3806579479390737
+        }
+      ]
+    },
+    "Insurer Financial Strength Rating(s)": {
+      "category": "Product Information",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 13,
+          "score": 0.3585921891236083
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.3507533229607047
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 2,
+          "score": 0.34800179751043836
+        }
+      ]
+    },
+    "Issuing Jurisdiction": {
+      "category": "Product Information",
+      "answer": "Hong Kong SAR",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 12,
+          "score": 0.27784546179734815
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 5,
+          "score": 0.26009939623441597
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 5,
+          "score": 0.25897603554437254
+        }
+      ]
+    },
+    "Product Name": {
+      "category": "Product Information",
+      "answer": "RoyalFortune",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.5176245608397494
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 17,
+          "score": 0.4770139416935971
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 15,
+          "score": 0.4585758526731132
+        }
+      ]
+    },
+    "Product Base": {
+      "category": "Product Information",
+      "answer": "The Product Base is an insurance policy with an investment component that has a target asset mix of \"Fixed Income Assets 80%-100%\" and \"Non-Fixed Income Assets 0%-20%\". The investment strategy aims to optimize long-term value to policyholders by investing in a diversified range of assets, including sovereign bonds, corporate bonds, corporate loans, and non-fixed income assets like equity-like investments and derivatives. The credit portfolio primarily invests in investment grade fixed income instruments, with a controlled exposure to below investment grade assets.",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 19,
+          "score": 0.29423081623171277
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.29320205282832157
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.28861089378452687
+        }
+      ]
+    },
+    "Product Type": {
+      "category": "Product Information",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 19,
+          "score": 0.2904142333379482
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.27781766909236033
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 17,
+          "score": 0.25146485891294296
+        }
+      ]
+    },
+    "Product Asset Manager": {
+      "category": "Product Information",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.3249124366522551
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.2868744852063875
+        },
+        {
+          "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃.pdf",
+          "page": 1,
+          "score": 0.27545107438181005
+        }
+      ]
+    },
+    "Product Asset Custodian": {
+      "category": "Product Information",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.3210630507853929
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.3043454991617648
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 14,
+          "score": 0.2664076480606099
+        }
+      ]
+    },
+    "Product Asset Mix": {
+      "category": "Product Information",
+      "answer": "The Product Asset Mix is \"Fixed Income Assets 80%-100%\" and \"Non-Fixed Income Assets 0%-20%.\"",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.5381869730976386
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.4269683083357094
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.405263935572
+        }
+      ]
+    },
+    "Issue Age and Age Methodology": {
+      "category": "Plan Details",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 14,
+          "score": 0.3465096779670633
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 9,
+          "score": 0.33775490213522963
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 14,
+          "score": 0.3157939508200135
+        }
+      ]
+    },
+    "Number of Insured Lives": {
+      "category": "Plan Details",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 17,
+          "score": 0.47449182092776526
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 15,
+          "score": 0.4705007129993687
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 13,
+          "score": 0.44509738088614154
+        }
+      ]
+    },
+    "Change of Life Assured Feature(s)": {
+      "category": "Plan Details",
+      "answer": "The Change of Life Assured Feature(s) include:\n- The ability to change the insured according to your need without extra fee and with no limit on the frequency of exercising this option, facilitating wealth transfer according to changing needs in a hassle-free process. [Page 9]\n- The new insured must have insurable interest with the existing policy owner at the time of change of insured. [Page 9]",
+      "confidence": "Medium",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 9,
+          "score": 0.6205863145648469
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 9,
+          "score": 0.5859654496220512
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 4,
+          "score": 0.5797198773939227
+        }
+      ]
+    },
+    "Minimum Premium / Sum Assured": {
+      "category": "Plan Details",
+      "answer": "USD125,000",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 15,
+          "score": 0.49863777810447396
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 14,
+          "score": 0.46312119992790723
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 6,
+          "score": 0.43764434140988734
+        }
+      ]
+    },
+    "Maximum Premium / Sum Assured": {
+      "category": "Plan Details",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 15,
+          "score": 0.5309320923784594
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 6,
+          "score": 0.49046740202415606
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 16,
+          "score": 0.4751059001495007
+        }
+      ]
+    },
+    "Policy Term": {
+      "category": "Plan Details",
+      "answer": "The policy term or duration extends to \"the Policy Anniversary or immediately following the New Insured’s 120th birthday, or 120 years from the original policy date, whichever is earlier.\"",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 9,
+          "score": 0.5247970525169979
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 14,
+          "score": 0.5202871968416236
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 9,
+          "score": 0.5041183723353799
+        }
+      ]
+    },
+    "Premium Term(s)": {
+      "category": "Plan Details",
+      "answer": "Single pay",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 15,
+          "score": 0.5675635306607796
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 6,
+          "score": 0.4595975789448235
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 14,
+          "score": 0.4382712330935817
+        }
+      ]
+    },
+    "Prepayment Applicable?": {
+      "category": "Plan Details",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 8,
+          "score": 0.45769564760033643
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 15,
+          "score": 0.3958883341029391
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 14,
+          "score": 0.3903773050767819
+        }
+      ]
+    },
+    "Policy Currency(ies)": {
+      "category": "Plan Details",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 19,
+          "score": 0.5351745597590567
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.4718614814887316
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 18,
+          "score": 0.46091048253229516
+        }
+      ]
+    },
+    "Withdrawal Features": {
+      "category": "Plan Details",
+      "answer": "The Withdrawal Features of the RoyalFortune insurance product include the flexibility to withdraw all or part of the accumulated Guaranteed Cash Coupon with interest, any amount in the Value Lock-in Account, and the cash value of the accumulated Reversionary Bonus to meet financial needs. However, withdrawing the cash value of the accumulated Reversionary Bonus will reduce the accumulated Reversionary Bonus and the long-term value of the policy. The maximum and minimum amount of cash withdrawal is subject to the then-current administrative rules. Any withdrawal exceeding the remaining balance of accumulated Guaranteed Cash Coupon with interest, cash value of accumulated Reversionary Bonus, or the amount in the Value Lock-in Account will be deducted from the Guaranteed Cash Value and the cash value of Terminal Bonus, which will reduce the Notional Amount (single premium) of the policy.",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 11,
+          "score": 0.4670933618707415
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 11,
+          "score": 0.3885095014930755
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 4,
+          "score": 0.31845123024395333
+        }
+      ]
+    },
+    "Death Settlement Feature(s)": {
+      "category": "Plan Details",
+      "answer": "The Death Settlement Feature(s) include:\n\n- Comprehensive Death Benefit Settlement Options, offering 6 types of Death Benefit Settlement Options that can be tailored to the needs of each beneficiary, providing flexibility in wealth allocation.\n- A Continuation Option, where upon the death of the Designated Insured, a New Policy is formed after the termination of the Original Policy, with the designated beneficiary becoming the new policy owner (if applicable) and the New Insured.",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 8,
+          "score": 0.583515518193148
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 10,
+          "score": 0.5170056925990396
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 4,
+          "score": 0.4692494210303534
+        }
+      ]
+    },
+    "Day 1 GCV": {
+      "category": "For Participating Whole of Life",
+      "answer": "80% of single premium",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 4,
+          "score": 0.2971443496928595
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 6,
+          "score": 0.29574005598479297
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 12,
+          "score": 0.2897550317405119
+        }
+      ]
+    },
+    "Total Surrender Value Components": {
+      "category": "For Participating Whole of Life",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 11,
+          "score": 0.5578423157344224
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 14,
+          "score": 0.520335672029639
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 14,
+          "score": 0.452723427894561
+        }
+      ]
+    },
+    "Total Death Benefit Components": {
+      "category": "For Participating Whole of Life",
+      "answer": "The Total Death Benefit Components are:\n- The higher of Guaranteed Cash Value on the date of claim approval + any accumulated Guaranteed Cash Coupon with interest + any cash value of accumulated Reversionary Bonus + any cash value of Terminal Bonus\n- Plus any face value of accumulated Reversionary Bonus\n- Plus any face value of Terminal Bonus\n- Plus any accumulated Guaranteed Cash Coupon with interest\n- Minus any amount in the Value Lock-in Account\n- Plus the amount of any loans with interest (only applicable if the Mental Incapacity Benefit Percentage is 100%).",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 8,
+          "score": 0.516992555250291
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 16,
+          "score": 0.4918488554462871
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 12,
+          "score": 0.48672633477897936
+        }
+      ]
+    },
+    "Backdating Availability?": {
+      "category": "Other Details",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 9,
+          "score": 0.3227947560132666
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 6,
+          "score": 0.31867152944806504
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 12,
+          "score": 0.3154519391784977
+        }
+      ]
+    },
+    "Non-Medical Limit": {
+      "category": "Other Details",
+      "answer": "The Non-Medical Limit is \"Less than or equals to USD2,000,000\".",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 13,
+          "score": 0.3135205812756902
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 12,
+          "score": 0.30868585851352104
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 12,
+          "score": 0.29178457827184356
+        }
+      ]
+    },
+    "Additional Benefits": {
+      "category": "Other Details",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 12,
+          "score": 0.47599524572022966
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 17,
+          "score": 0.4376473003952118
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 16,
+          "score": 0.43245817434116995
+        }
+      ]
+    },
+    "Contract Governing Law": {
+      "category": "Other Details",
+      "answer": "[Not Found]",
+      "confidence": "Low",
+      "sources": [
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 10,
+          "score": 0.2663567029368621
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 9,
+          "score": 0.2658183357861981
+        },
+        {
+          "source": "RoyalFortune_Product Brochure_EN.pdf",
+          "page": 12,
+          "score": 0.25485376119424585
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_questions": 27,
+    "answered": 14,
+    "not_found": 13,
+    "success_rate": "51.9%",
+    "total_tokens": 76539,
+    "total_cost": "$0.2660"
+  }
+}

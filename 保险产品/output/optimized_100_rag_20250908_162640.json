@@ -1,0 +1,362 @@
+{
+  "results": {
+    "RoyalFortune_Product Brochure_EN": {
+      "Insurer Entity Name": {
+        "answer": "Sun Life Hong Kong Limited",
+        "confidence": 100,
+        "method": "direct"
+      },
+      "Product Name": {
+        "answer": "RoyalFortune",
+        "confidence": 100,
+        "method": "direct"
+      },
+      "Minimum Premium": {
+        "answer": "125,000",
+        "confidence": 90,
+        "method": "pattern"
+      },
+      "Maximum Premium": {
+        "answer": "16",
+        "confidence": 90,
+        "method": "pattern"
+      },
+      "Policy Currency": {
+        "answer": "USD",
+        "confidence": 100,
+        "method": "direct"
+      },
+      "Policy Term": {
+        "answer": "120",
+        "confidence": 90,
+        "method": "pattern"
+      },
+      "Issue Age": {
+        "answer": "Age 0-80",
+        "confidence": 95,
+        "method": "table"
+      },
+      "Premium Term(s)": {
+        "answer": "Single premium",
+        "confidence": 100,
+        "method": "direct"
+      },
+      "Number of Insured Lives": {
+        "answer": "Single Life",
+        "confidence": 90,
+        "method": "pattern"
+      },
+      "Product Type": {
+        "answer": "Participating insurance plan",
+        "confidence": 100,
+        "method": "direct"
+      },
+      "Issuing Jurisdiction": {
+        "answer": "Hong Kong SAR",
+        "confidence": 100,
+        "method": "direct"
+      },
+      "Withdrawal Features": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Death Settlement Feature(s)": {
+        "answer": "The higher of\nb) Guaranteed Cash Value\na) Total premium paid or on the date of death of\nthe Designated Insured\n+\nany face value of accumulated Reversionary Bonus\n+\nany face value of Terminal Bonus\n+\nany accumulated Guaranteed Cash Coupon with interest\n-\nany amount in the Value Lock-in Account\nthe amount of any loans with interest",
+        "confidence": 85.5,
+        "method": "table"
+      },
+      "Additional Benefits": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Contract Governing Law": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Product Asset Mix": {
+        "answer": "80%",
+        "confidence": 90,
+        "method": "pattern"
+      },
+      "Backdating Availability?": {
+        "answer": "[Low Confidence] Not specified",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Non-Medical Limit": {
+        "answer": "[Low Confidence] Subject to underwriting requirements",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Prepayment Applicable?": {
+        "answer": "[Low Confidence] As per policy terms",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Policy Currency(ies)": {
+        "answer": "USD",
+        "confidence": 85.5,
+        "method": "table"
+      },
+      "Issue Age and Age Methodology": {
+        "answer": "Before\nDesignated age\ndesignated age",
+        "confidence": 85.5,
+        "method": "table"
+      },
+      "Change of Life Assured Feature(s)": {
+        "answer": "[Low Confidence] Subject to approval",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Day 1 GCV": {
+        "answer": "80%",
+        "confidence": 90,
+        "method": "pattern"
+      },
+      "Total Surrender Value Components": {
+        "answer": "Guaranteed Cash Value\nany accumulated Guaranteed Cash Coupon with interest\nany cash value of accumulated Reversionary Bonus\nany cash value of Terminal Bonus\nany amount in the Value Lock-in Account\nthe amount of any loans with interest",
+        "confidence": 85.5,
+        "method": "table"
+      },
+      "Total Death Benefit Components": {
+        "answer": "3% incremental p.a.",
+        "confidence": 85.5,
+        "method": "table"
+      },
+      "Product Base": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Product Asset Manager": {
+        "answer": "[Low Confidence] Managed by insurer",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Product Asset Custodian": {
+        "answer": "[Low Confidence] Custodian bank as appointed",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Insurer Financial Strength Rating(s)": {
+        "answer": "[Low Confidence] Please refer to latest ratings",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Guaranteed Surrender Value": {
+        "answer": "equals",
+        "confidence": 85.5,
+        "method": "table"
+      },
+      "Guaranteed Death Benefit": {
+        "answer": "Starting from the end date of the 7th policy year,\nwe will distribute a Guaranteed Cash Coupon and,\nthereafter, on every policy year, distribute the\nGuaranteed Cash Coupon at the end date of that\npolicy year Guaranteed Cash Coupon. The\ndistributed Guaranteed Cash Coupon will remain\nunchanged throughout your benefit term, even\namid market fluctuations.\nGuaranteed Cash Coupon is equal to 0.8% of\nNotional Amount. It is determined at the end of the\nrelevant policy year based on the Notional Amount\nat that time.\nThe default payment option of the Guaranteed\nCash Coupon will be “Accumulation” as at the time\nyour policy is issued, however, you may choose to\naccumulate or cash out the Guaranteed Cash\nCoupon. If you choose to leave the Guaranteed\nCash Coupon with Sun Life HK, it will be\naccumulated with a non-guaranteed interest rate\nof 3.50% p.a.3.",
+        "confidence": 85.5,
+        "method": "table"
+      },
+      "Living Benefits": {
+        "answer": "[Low Confidence] As per policy provisions",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Riders Available": {
+        "answer": "[Low Confidence] Optional riders may be available",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Free Look Period": {
+        "answer": "[Low Confidence] 21 days (standard)",
+        "confidence": 40,
+        "method": "default"
+      }
+    },
+    "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃": {
+      "Insurer Entity Name": {
+        "answer": "友邦保險(國際)有限公司 (AIA Insurance (International) Limited)",
+        "confidence": 100,
+        "method": "direct"
+      },
+      "Product Name": {
+        "answer": "活享儲蓄計劃 (FlexiAchiever Savings Plan)",
+        "confidence": 100,
+        "method": "direct"
+      },
+      "Minimum Premium": {
+        "answer": "2,000",
+        "confidence": 90,
+        "method": "pattern"
+      },
+      "Maximum Premium": {
+        "answer": "[Low Confidence] No maximum limit specified",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Policy Currency": {
+        "answer": "美元 (USD)",
+        "confidence": 100,
+        "method": "direct"
+      },
+      "Policy Term": {
+        "answer": "終身",
+        "confidence": 90,
+        "method": "pattern"
+      },
+      "Issue Age": {
+        "answer": "15日至75歲",
+        "confidence": 90,
+        "method": "pattern"
+      },
+      "Premium Term(s)": {
+        "answer": "5年 (5 years)",
+        "confidence": 100,
+        "method": "direct"
+      },
+      "Number of Insured Lives": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Product Type": {
+        "answer": "儲蓄保險計劃 (Savings Insurance Plan)",
+        "confidence": 100,
+        "method": "direct"
+      },
+      "Issuing Jurisdiction": {
+        "answer": "香港 (Hong Kong)",
+        "confidence": 100,
+        "method": "direct"
+      },
+      "Withdrawal Features": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Death Settlement Feature(s)": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Additional Benefits": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Contract Governing Law": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Product Asset Mix": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Backdating Availability?": {
+        "answer": "[Low Confidence] Not specified",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Non-Medical Limit": {
+        "answer": "[Low Confidence] Subject to underwriting requirements",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Prepayment Applicable?": {
+        "answer": "[Low Confidence] As per policy terms",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Policy Currency(ies)": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Issue Age and Age Methodology": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Change of Life Assured Feature(s)": {
+        "answer": "[Low Confidence] Subject to approval",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Day 1 GCV": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Total Surrender Value Components": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Total Death Benefit Components": {
+        "answer": "身故賠償將為(以較高者為準)：",
+        "confidence": 95,
+        "method": "table"
+      },
+      "Product Base": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Product Asset Manager": {
+        "answer": "[Low Confidence] Managed by insurer",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Product Asset Custodian": {
+        "answer": "[Low Confidence] Custodian bank as appointed",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Insurer Financial Strength Rating(s)": {
+        "answer": "[Low Confidence] Please refer to latest ratings",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Guaranteed Surrender Value": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Guaranteed Death Benefit": {
+        "answer": "[Low Confidence] [Information not available in document]",
+        "confidence": 30,
+        "method": "not_found"
+      },
+      "Living Benefits": {
+        "answer": "[Low Confidence] As per policy provisions",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Riders Available": {
+        "answer": "[Low Confidence] Optional riders may be available",
+        "confidence": 40,
+        "method": "default"
+      },
+      "Free Look Period": {
+        "answer": "[Low Confidence] 21 days (standard)",
+        "confidence": 40,
+        "method": "default"
+      }
+    }
+  },
+  "statistics": {
+    "total_fields": 68,
+    "answer_rate": "100%",
+    "confidence_distribution": {
+      "high_confidence": 30,
+      "medium_confidence": 0,
+      "low_confidence": 38,
+      "table": 0,
+      "pattern": 0,
+      "fuzzy": 0,
+      "gpt4": 0
+    },
+    "cost": "$0.0300"
+  }
+}

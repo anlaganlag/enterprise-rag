@@ -1,0 +1,371 @@
+{
+  "results": {
+    "RoyalFortune": {
+      "Insurer Entity Name": {
+        "answer": "Sun Life Hong Kong Limited",
+        "confidence": "High",
+        "method": "exact",
+        "source": "RoyalFortune"
+      },
+      "Product Name": {
+        "answer": "RoyalFortune",
+        "confidence": "High",
+        "method": "exact",
+        "source": "RoyalFortune"
+      },
+      "Minimum Premium": {
+        "answer": "125,000",
+        "confidence": "High",
+        "method": "pattern",
+        "source": "RoyalFortune page 15"
+      },
+      "Maximum Premium": {
+        "answer": "[Not Found]",
+        "confidence": "High",
+        "method": "not_found",
+        "reason": "No maximum specified"
+      },
+      "Policy Currency": {
+        "answer": "USD",
+        "confidence": "High",
+        "method": "exact",
+        "source": "RoyalFortune"
+      },
+      "Policy Term": {
+        "answer": "is extended due",
+        "confidence": "High",
+        "method": "pattern",
+        "source": "RoyalFortune page 9"
+      },
+      "Issue Age": {
+        "answer": "Age 0-80",
+        "confidence": "High",
+        "method": "exact",
+        "source": "RoyalFortune"
+      },
+      "Premium Term(s)": {
+        "answer": "Single premium",
+        "confidence": "High",
+        "method": "exact",
+        "source": "RoyalFortune"
+      },
+      "Number of Insured Lives": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Product Type": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Issuing Jurisdiction": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Withdrawal Features": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Death Settlement Feature(s)": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Additional Benefits": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Contract Governing Law": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Product Asset Mix": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Backdating Availability?": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Non-Medical Limit": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Prepayment Applicable?": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Policy Currency(ies)": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Issue Age and Age Methodology": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Change of Life Assured Feature(s)": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Day 1 GCV": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Total Surrender Value Components": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Total Death Benefit Components": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Product Base": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Product Asset Manager": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Product Asset Custodian": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Insurer Financial Strength Rating(s)": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Guaranteed Surrender Value": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Guaranteed Death Benefit": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Living Benefits": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Riders Available": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Free Look Period": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      }
+    },
+    "AIA_FlexiAchiever": {
+      "Insurer Entity Name": {
+        "answer": "友邦保險(國際)有限公司",
+        "confidence": "High",
+        "method": "exact",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Product Name": {
+        "answer": "活享儲蓄計劃",
+        "confidence": "High",
+        "method": "exact",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Minimum Premium": {
+        "answer": "2,000",
+        "confidence": "High",
+        "method": "pattern",
+        "source": "AIA_FlexiAchiever page 8"
+      },
+      "Maximum Premium": {
+        "answer": "[Not Found]",
+        "confidence": "High",
+        "method": "not_found",
+        "reason": "No maximum specified"
+      },
+      "Policy Currency": {
+        "answer": "美元",
+        "confidence": "High",
+        "method": "exact",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Policy Term": {
+        "answer": "終身",
+        "confidence": "High",
+        "method": "exact",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Issue Age": {
+        "answer": "15日至75歲",
+        "confidence": "High",
+        "method": "pattern",
+        "source": "AIA_FlexiAchiever page 8"
+      },
+      "Premium Term(s)": {
+        "answer": "5年",
+        "confidence": "High",
+        "method": "exact",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Number of Insured Lives": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Product Type": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Issuing Jurisdiction": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Withdrawal Features": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Death Settlement Feature(s)": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Additional Benefits": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Contract Governing Law": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Product Asset Mix": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Backdating Availability?": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Non-Medical Limit": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Prepayment Applicable?": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Policy Currency(ies)": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Issue Age and Age Methodology": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Change of Life Assured Feature(s)": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Day 1 GCV": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Total Surrender Value Components": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Total Death Benefit Components": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Product Base": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Product Asset Manager": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Product Asset Custodian": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Insurer Financial Strength Rating(s)": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Guaranteed Surrender Value": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Guaranteed Death Benefit": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Living Benefits": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Riders Available": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      },
+      "Free Look Period": {
+        "answer": "[Field not mapped]",
+        "confidence": "Low",
+        "method": "unmapped"
+      }
+    }
+  },
+  "summary": {
+    "total_questions": 34,
+    "total_documents": 2,
+    "successful_extractions": 14,
+    "success_rate": "20.6%",
+    "cost": "$0.0000"
+  }
+}

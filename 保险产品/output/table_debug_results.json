@@ -1,0 +1,1576 @@
+{
+  "RoyalFortune_Product Brochure_EN": {
+    "file": "RoyalFortune_Product Brochure_EN.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "tables": [],
+        "text_tables": []
+      },
+      {
+        "page": 2,
+        "tables": [],
+        "text_tables": []
+      },
+      {
+        "page": 3,
+        "tables": [],
+        "text_tables": [
+          {
+            "pattern": "asset_allocation",
+            "matches": [
+              "80%"
+            ],
+            "sample": "['80%']"
+          }
+        ]
+      },
+      {
+        "page": 4,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 6,
+            "sample": [
+              [
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 1,
+            "cols": 2,
+            "sample": [
+              [
+                "Grow your savings with guaranteed and potential gains\nto realize long-term wealth accumulation\na. Guaranteed Cash Value from policy inception\nb.Regular distribution of Guaranteed Cash Coupon starts at the end of the 7th policy year\nc. Early declaration of non-guaranteed Reversionary Bonus starts at the end of the 1st\npolicy year\nd.Non-guaranteed one-off Terminal Bonus\nSecure optimal financial flexibility with guaranteed\nday‑1 cash value equals to 80% of single premium and\nguaranteed breakeven at the end of 6th policy year\nLock-in your policy values to enjoy greater certainty\nover potential gains\nPass your wealth on with comprehensive options that\naccommodate life’s changes\na. Comprehensive Death Benefit Settlement Options\nb.Unlimited Change of Insured Option and Change of Coverage Option when needed\nc. Designation of Contingent Policy Owner Option\nd.Free Policy Split Option\nFlexible withdrawals to support your financial needs\nGive your loved ones reassurance with the Mental\nIncapacity Benefit\nSupport you through times of emergency\nStress-free application",
+                ""
+              ]
+            ]
+          }
+        ],
+        "text_tables": [
+          {
+            "pattern": "asset_allocation",
+            "matches": [
+              "7",
+              "80%"
+            ],
+            "sample": "['7', '80%']"
+          }
+        ]
+      },
+      {
+        "page": 5,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 7,
+            "sample": [
+              [
+                "",
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 3,
+            "cols": 2,
+            "sample": [
+              [
+                "Guaranteed portion",
+                null
+              ],
+              [
+                "a.Guaranteed Cash Value from\npolicy inception",
+                "b. Regular distribution of Guaranteed Cash Coupon\nstarts at the end of the 7th policy year"
+              ],
+              [
+                "Starting from policy inception,\nGuaranteed Cash Value is\npayable upon policy maturity,\nsurrender, payment of Mental\nIncapacity Benefit1\n(if applicable) or death of\nthe Designated Insured2\n(if applicable).",
+                "Starting from the end date of the 7th policy year,\nwe will distribute a Guaranteed Cash Coupon and,\nthereafter, on every policy year, distribute the\nGuaranteed Cash Coupon at the end date of that\npolicy year Guaranteed Cash Coupon. The\ndistributed Guaranteed Cash Coupon will remain\nunchanged throughout your benefit term, even\namid market fluctuations.\nGuaranteed Cash Coupon is equal to 0.8% of\nNotional Amount. It is determined at the end of the\nrelevant policy year based on the Notional Amount\nat that time.\nThe default payment option of the Guaranteed\nCash Coupon will be “Accumulation” as at the time\nyour policy is issued, however, you may choose to\naccumulate or cash out the Guaranteed Cash\nCoupon. If you choose to leave the Guaranteed\nCash Coupon with Sun Life HK, it will be\naccumulated with a non-guaranteed interest rate\nof 3.50% p.a.3."
+              ]
+            ]
+          }
+        ],
+        "text_tables": [
+          {
+            "pattern": "asset_allocation",
+            "matches": [
+              "0"
+            ],
+            "sample": "['0']"
+          }
+        ]
+      },
+      {
+        "page": 6,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 6,
+            "sample": [
+              [
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 3,
+            "cols": 2,
+            "sample": [
+              [
+                "Non-guaranteed portion",
+                null
+              ],
+              [
+                "c. Early declaration of non-\nguaranteed Reversionary\nBonus4 starts at the end of\nthe 1st policy year",
+                "d. One-off Terminal Bonus4"
+              ],
+              [
+                "The Reversionary Bonus (if any)\nwill be declared to your policy\nas early as the end of the 1st\npolicy year and at the end of\nevery policy year thereafter.\nOnce the Reversionary Bonus is\ndeclared5, the face value of\nReversionary Bonus become\nguaranteed and will be\naccumulated with the policy.",
+                "The one-time Terminal Bonus cannot be cashed out\nor loaned. The cash value of Terminal Bonus is\npayable upon the payment of policy maturity,\nsurrender or Mental Incapacity Benefit1\n[if applicable] while the face value of Terminal Bonus\nis payable upon the death of the Designated\nInsured2. The Terminal Bonus is non-guaranteed\nand can increase or decrease according to the rules\nset out by Sun Life HK from time to time."
+              ]
+            ]
+          },
+          {
+            "index": 2,
+            "rows": 2,
+            "cols": 1,
+            "sample": [
+              [
+                ""
+              ],
+              [
+                ""
+              ]
+            ]
+          }
+        ],
+        "text_tables": [
+          {
+            "pattern": "asset_allocation",
+            "matches": [
+              "80%",
+              "100%",
+              "80%"
+            ],
+            "sample": "['80%', '100%', '80%']"
+          }
+        ]
+      },
+      {
+        "page": 7,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 7,
+            "sample": [
+              [
+                "",
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 8,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 6,
+            "sample": [
+              [
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 6,
+            "cols": 2,
+            "sample": [
+              [
+                "Full payment in a lump-sum",
+                ""
+              ],
+              [
+                "Full payment by installments\nFull amount to be paid in monthly or\nannual mode ranging from 2-50 years",
+                ""
+              ],
+              [
+                "Partial payment installments\nPartial amount to be paid in lump-sum first and\nthe remaining to be paid by installments",
+                ""
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 9,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 7,
+            "sample": [
+              [
+                "",
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 10,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 6,
+            "sample": [
+              [
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 11,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 7,
+            "sample": [
+              [
+                "",
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 12,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 6,
+            "sample": [
+              [
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          }
+        ],
+        "text_tables": [
+          {
+            "pattern": "asset_allocation",
+            "matches": [
+              "25%"
+            ],
+            "sample": "['25%']"
+          }
+        ]
+      },
+      {
+        "page": 13,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 7,
+            "sample": [
+              [
+                "",
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 3,
+            "cols": 2,
+            "sample": [
+              [
+                "Total Notional Amount /\nGuaranteed Saving Amount per life",
+                "Underwriting procedure"
+              ],
+              [
+                "Less than or equals to USD2,000,000",
+                "No medical underwriting"
+              ],
+              [
+                "More than USD2,000,000",
+                "Simplified underwriting"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 14,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 13,
+            "sample": [
+              [
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life",
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information A",
+                "bout Sun Life",
+                ""
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 1,
+            "cols": 2,
+            "sample": [
+              [
+                "Wealth accumulation with early guaranteed breakeven\nMr. and Mrs. A, both 40-year-old working professionals at high points in their career, they have\na 5-year-old son, C. Although they have already set money aside for C’s future education, they would\nlike to make their savings and investments go further amid rising living costs so they can enjoy their\ndream retirement and pass on their accumulated wealth.\nAccumulated Guaranteed\nCash Coupon with interest:\nUSD17,677\nProjected total surrender value: Projected total surrender value: Projected total surrender value:\nUSD100,000 USD151,180 USD371,697\n(80% of single premium) (121% of single premium) (297% of single premium)\nPolicy year 0 6 20\nMr. A (age 40)\nMr. A passes away. As Mr. A designated\npurchases Guaranteed breakeven\nMrs. A (wife, age 60) as the beneficiary\nRoyalFortune\nand selected Continuation Option as the\nDeath Benefit Settlement Option when\nhe was alive. The Original Policy is\nautomatically terminated, and a New\nPolicy is formed. Mrs. A has become the\npolicy owner and insured of the New\nPolicy. Wealth accumulation will\ncontinue without interruption.\nThe above diagrams are for illustrative purposes only and assume no withdrawal is made and Value Lock-in\nOption is not exercised. All figures shown in the case are rounded to the nearest whole number. The projected\nreturns stated in the example are based on Sun Life HK’s bonus scales determined under current assumed\ninvestment returns and are not guaranteed. The actual amounts of accumulated Guaranteed Cash Coupon with\ninterest, the cash value and face value of the accumulated Reversionary Bonus and the cash value and face value\nof Terminal Bonus payable may be higher or lower than the above illustrated figures. The accumulation interest\nrate of Guaranteed Cash Coupon is assumed to be at an interest rate of 3.5% p.a. which is non-guaranteed and is\nsubject to change by Sun Life HK from time to time at its sole discretion. Under some circumstances, the actual\namounts of the Reversionary Bonus and Terminal Bonus may be zero. The Reversionary Bonus and Terminal\nBonus may vary based on the performance of a number of experience factors, with the investment returns\nnormally being the main determinant. Other factors include, but are not limited to, claims experience, policy\nexpenses, taxes, and policy owner termination experience. For details, please refer to the Bonus Philosophy under\nthe Important Information section.",
+                "Mr. A Notional Amount (single premium): USD125,000\nAge 40 Premium payment term: Single pay\nAccumulated Guaranteed Accumulated Guaranteed\nCash Coupon with interest: Cash Coupon with interest:\nUSD63,453 USD154,538\nProjected total surrender value: Projected total surrender value:\nUSD1,285,716 USD4,363,481\n(1,029% of single premium) (3,491% of single premium)\n40 60\nMrs. A (age 80) wants to pass After Mrs. A passes away,\nthe coverage to her son, Mr. C, Mr. C becomes the new policy\nshe then designated her son, owner and the new insured. Mr. C\nMr. C (age 45) as the policy (age 65) can withdraw16 for\nowner with the Designation of a retirement income stream or\nContingency Policy Owner let the policy value continue to\nOption and change the insured to accumulate until age 120.\nher son with the Change of\nthe Insured Option.\nRemarks:\n16 Any withdrawal which exceeds the remaining balance of accumulated Guaranteed Cash Coupon with interest and/or cash value of accumulated\nReversionary Bonus and/or the amount in the Value Lock-in Account will be deducted from the Guaranteed Cash Value and the cash value of\nTerminal Bonus, which in turn will reduce the Notional Amount (single premium) of the policy and be deemed as partial surrender and will also\nreduce the long-term value of the policy. The Notional Amount after partial surrender must be subject to the minimum Notional Amount\nrequirement in the then current administrative rules."
+              ]
+            ]
+          }
+        ],
+        "text_tables": [
+          {
+            "pattern": "asset_allocation",
+            "matches": [
+              "63",
+              "3"
+            ],
+            "sample": "['63', '3']"
+          }
+        ]
+      },
+      {
+        "page": 15,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 6,
+            "sample": [
+              [
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 9,
+            "cols": 2,
+            "sample": [
+              [
+                "Plan",
+                "RoyalFortune"
+              ],
+              [
+                "Premium Payment Term",
+                "Single premium"
+              ],
+              [
+                "Minimum Notional Amount",
+                "USD125,000"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 16,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 7,
+            "sample": [
+              [
+                "",
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 3,
+            "cols": 2,
+            "sample": [
+              [
+                "Plan",
+                "RoyalFortune"
+              ],
+              [
+                "Mental Incapacity Benefit",
+                "Mental Incapacity Benefit Percentage\n(Guaranteed Cash Value on the date of claim approval\nany accumulated Guaranteed Cash Coupon with interest\nany cash value of accumulated Reversionary Bonus\nany amount in the Value Lock-in Account\nany cash value of Terminal Bonus)\nthe amount of any loans with interest*\n* Only applicable if the Mental Incapacity Benefit Percentage is 100%"
+              ],
+              [
+                "Death Benefit",
+                "The higher of\nb) Guaranteed Cash Value\na) Total premium paid or on the date of death of\nthe Designated Insured\n+\nany face value of accumulated Reversionary Bonus\n+\nany face value of Terminal Bonus\n+\nany accumulated Guaranteed Cash Coupon with interest\n-\nany amount in the Value Lock-in Account\nthe amount of any loans with interest"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 17,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 6,
+            "sample": [
+              [
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 18,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 7,
+            "sample": [
+              [
+                "",
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 1,
+            "cols": 2,
+            "sample": [
+              [
+                "Asset Class",
+                "Target Asset Mix"
+              ]
+            ]
+          }
+        ],
+        "text_tables": [
+          {
+            "pattern": "asset_allocation",
+            "matches": [
+              "80%",
+              "0%"
+            ],
+            "sample": "['80%', '0%']"
+          }
+        ]
+      },
+      {
+        "page": 19,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 6,
+            "sample": [
+              [
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 20,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 7,
+            "sample": [
+              [
+                "",
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 21,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 6,
+            "sample": [
+              [
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 22,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 7,
+            "sample": [
+              [
+                "",
+                "",
+                "Key features",
+                "Case study",
+                "Key product information",
+                "Important information",
+                "About Sun Life"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 23,
+        "tables": [],
+        "text_tables": []
+      }
+    ],
+    "tables_found": 29,
+    "text_tables_found": 7,
+    "potential_table_text": [
+      {
+        "page": 3,
+        "pattern": "(?:Cash Value|GCV|Surrender Value)",
+        "context": "a solid foundation for future generations. Providing optimal financial flexibility Guaranteed day-1 cash value equals to 80% of single premium as the policy starts and guaranteed breakeven as early as the end of the 6th policy year, RoyalFortune gives you extra confidence and financial resilience to achieve your financial goals even amid market fluctuations. Realizing long-term wealth accumulation Combining"
+      },
+      {
+        "page": 3,
+        "pattern": "(?:Premium|Payment)",
+        "context": "ations. Providing optimal financial flexibility Guaranteed day-1 cash value equals to 80% of single premium as the policy starts and guaranteed breakeven as early as the end of the 6th policy year, RoyalFortune gives you extra confidence and financial resilience to achieve your financial goals even amid market fluctuations. Realizing long-term wealth accumulation Combining features of guaranteed and non-"
+      },
+      {
+        "page": 4,
+        "pattern": "(?:Cash Value|GCV|Surrender Value)",
+        "context": " savings with guaranteed and potential gains to realize long-term wealth accumulation a. Guaranteed Cash Value from policy inception b.Regular distribution of Guaranteed Cash Coupon starts at the end of the 7th policy year c. Early declaration of non-guaranteed Reversionary Bonus starts at the end of the 1st policy year d.Non-guaranteed one-off Terminal Bonus Secure optimal financial flexibility with guaran"
+      },
+      {
+        "page": 4,
+        "pattern": "(?:Death Benefit|Coverage)",
+        "context": "ins Pass your wealth on with comprehensive options that accommodate life’s changes a. Comprehensive Death Benefit Settlement Options b.Unlimited Change of Insured Option and Change of Coverage Option when needed c. Designation of Contingent Policy Owner Option d.Free Policy Split Option Flexible withdrawals to support your financial needs Give your loved ones reassurance with the Mental Incapacity Benefit Supp"
+      },
+      {
+        "page": 4,
+        "pattern": "(?:Premium|Payment)",
+        "context": "Bonus Secure optimal financial flexibility with guaranteed day‑1 cash value equals to 80% of single premium and guaranteed breakeven at the end of 6th policy year Lock-in your policy values to enjoy greater certainty over potential gains Pass your wealth on with comprehensive options that accommodate life’s changes a. Comprehensive Death Benefit Settlement Options b.Unlimited Change of Insured Option and"
+      },
+      {
+        "page": 5,
+        "pattern": "(?:Cash Value|GCV|Surrender Value)",
+        "context": "ential total returns no matter the market condition is good or bad. Guaranteed portion a.Guaranteed Cash Value from b. Regular distribution of Guaranteed Cash Coupon policy inception starts at the end of the 7th policy year Starting from policy inception, Starting from the end date of the 7th policy year, Guaranteed Cash Value is we will distribute a Guaranteed Cash Coupon and, payable upon policy maturity,"
+      },
+      {
+        "page": 5,
+        "pattern": "(?:Death Benefit|Coverage)",
+        "context": ".50% p.a.3. Remarks: 1 It is only applicable if (a) the policy owner and the insured (if the chosen coverage is Single Life) or one of the insureds (if the chosen coverage is Joint Life) must be the same person at the time you apply for the designation of Mental Incapacity Benefit Recipient; (b) the proposed Mental Incapacity Benefit Recipient must be age of 18 or above; (c) satisfactory evidence of the p"
+      },
+      {
+        "page": 5,
+        "pattern": "(?:Premium|Payment)",
+        "context": "upon and, payable upon policy maturity, thereafter, on every policy year, distribute the surrender, payment of Mental Guaranteed Cash Coupon at the end date of that Incapacity Benefit1 policy year Guaranteed Cash Coupon. The (if applicable) or death of distributed Guaranteed Cash Coupon will remain the Designated Insured2 unchanged throughout your benefit term, even (if applicable). amid market fluctuati"
+      },
+      {
+        "page": 6,
+        "pattern": "(?:Cash Value|GCV|Surrender Value)",
+        "context": "ny) The one-time Terminal Bonus cannot be cashed out will be declared to your policy or loaned. The cash value of Terminal Bonus is as early as the end of the 1st payable upon the payment of policy maturity, policy year and at the end of surrender or Mental Incapacity Benefit1 every policy year thereafter. [if applicable] while the face value of Terminal Bonus Once the Reversionary Bonus is is payable upon "
+      },
+      {
+        "page": 6,
+        "pattern": "(?:Premium|Payment)",
+        "context": "licy or loaned. The cash value of Terminal Bonus is as early as the end of the 1st payable upon the payment of policy maturity, policy year and at the end of surrender or Mental Incapacity Benefit1 every policy year thereafter. [if applicable] while the face value of Terminal Bonus Once the Reversionary Bonus is is payable upon the death of the Designated declared5, the face value of Insured2. The Termin"
+      },
+      {
+        "page": 7,
+        "pattern": "(?:Cash Value|GCV|Surrender Value)",
+        "context": "e you exercise this option, you can choose a Lock-in Percentage of 10%-50% of the sum of Guaranteed Cash Value and non-guaranteed bonuses of your policy. Details you should know ▪ You can exercise the Value Lock-in Option once per policy year, starting from the 10th policy anniversary. ▪ You can exercise this option up to a maximum aggregate Lock-in Percentage of 50%. ▪ Once your request is approved, it can"
+      },
+      {
+        "page": 7,
+        "pattern": "(?:Premium|Payment)",
+        "context": "k-in Option, your policy’s Notional Amount, Guaranteed Cash Value, non-guaranteed bonuses and total premium paid will be proportionally reduced according to the Lock-in Percentage by triggering partial surrender. Afterward the future declaration of non-guaranteed bonuses and Guaranteed Cash Coupon to be distributed will be reduced accordingly. ▪ The Notional Amount after the Value Lock-in Option is exerc"
+      },
+      {
+        "page": 8,
+        "pattern": "(?:Death Benefit|Coverage)",
+        "context": "une Pass your wealth on with comprehensive options that accommodate life’s changes a. Comprehensive Death Benefit Settlement Options In the unfortunate event that the Designated Insured passes away, a Death Benefit will be paid to the beneficiary. RoyalFortune offers comprehensive 6 types of Death Benefit Settlement Options6 that can tailor to the needs of each beneficiary, to provide greater flexibility in yo"
+      },
+      {
+        "page": 8,
+        "pattern": "(?:Premium|Payment)",
+        "context": "wellbeing of your beloved ones in different life stages, or even to allow your legacy to grow. Full payment in a lump-sum Full payment by installments Full amount to be paid in monthly or annual mode ranging from 2-50 years Partial payment installments Partial amount to be paid in lump-sum first and the remaining to be paid by installments F ir s t- i n - m a r k e t7 Partial payment by installments Befo"
+      },
+      {
+        "page": 9,
+        "pattern": "(?:Cash Value|GCV|Surrender Value)",
+        "context": "amount of any loans and interest and the policy values of the Original Policy, including Guaranteed Cash Value, accumulated Guaranteed Cash Coupon with interest (if any), the amount in Value Lock-in Account (if any), accumulated Reversionary Bonus (if any), Terminal Bonus (if any) will be allocated to the New Policy according to the designated percentage to the corresponding beneficiary as stated in the rel"
+      },
+      {
+        "page": 9,
+        "pattern": "(?:Death Benefit|Coverage)",
+        "context": "portant information About Sun Life RoyalFortune b. Unlimited Change of Insured Option and Change of Coverage Option RoyalFortune offers you flexibility for your legacy planning without interruption. You can choose to cover one insured (Single Life) or two insureds (Joint Life) under the policy at the time of application10. Whenever necessary, you may request to change from Joint Life to Single Life or fro"
+      },
+      {
+        "page": 9,
+        "pattern": "(?:Premium|Payment)",
+        "context": "or 120 years from the original policy date, whichever is earlier; c. The Notional Amount, the total premium paid and the outstanding amount of any loans and interest and the policy values of the Original Policy, including Guaranteed Cash Value, accumulated Guaranteed Cash Coupon with interest (if any), the amount in Value Lock-in Account (if any), accumulated Reversionary Bonus (if any), Terminal Bonus ("
+      },
+      {
+        "page": 10,
+        "pattern": "(?:Death Benefit|Coverage)",
+        "context": "t will be charged for exercising this option. Further, if you opt for Continuation Option8,9 as the Death Benefit Settlement Option6, upon the death of the Designated Insured, a New Policy will be formed after termination of the Original Policy. And the designated beneficiary will become the new policy owner (if applicable) and the New Insured. Even if the Designated Insured accidentally passes away, the polic"
+      },
+      {
+        "page": 11,
+        "pattern": "(?:Cash Value|GCV|Surrender Value)",
+        "context": "Guaranteed Cash Coupon with interest (if any), any amount in Value Lock-in Account (if any) and the cash value of the accumulated Reversionary Bonus (if any)16 to meet your needs. If you opt to withdraw the cash value of the accumulated Reversionary Bonus, the accumulated Reversionary Bonus and the long-term value of the policy will be reduced accordingly. Remarks: 15 The maximum and minimum amount of cash "
+      },
+      {
+        "page": 11,
+        "pattern": "(?:Premium|Payment)",
+        "context": "h Value and the cash value of Terminal Bonus, which in turn will reduce the Notional Amount (single premium) of the policy and be deemed as partial surrender and will also reduce the long-term value of the policy. The Notional Amount after partial surrender must be subject to the minimum Notional Amount requirement in the then current administrative rules. 9"
+      },
+      {
+        "page": 12,
+        "pattern": "(?:Cash Value|GCV|Surrender Value)",
+        "context": " need. You may choose a Mental Incapacity Benefit Percentage of 25%, 50%, 75%, or 100% of the Total Cash Value. When you opt for Mental Incapacity Benefit Percentage of 25%, 50% or 75%16 of the Total Cash Value, your policy value can continue growing even after the Mental Incapacity Benefit is paid. You may apply to change the Mental Incapacity Benefit Recipient and Mental Incapacity Benefit Percentage from"
+      },
+      {
+        "page": 12,
+        "pattern": "(?:Death Benefit|Coverage)",
+        "context": "e is 100%. Remarks: 17 It is only applicable if (a) the policy owner and the insured (if the chosen coverage is Single Life) or one of the insureds (if the chosen coverage is Joint Life) must be the same person at the time you apply for the designation of Mental Incapacity Benefit Recipient; (b) the proposed Mental Incapacity Benefit Recipient must be age of 18 or above; (c) satisfactory evidence of the p"
+      },
+      {
+        "page": 12,
+        "pattern": "(?:Premium|Payment)",
+        "context": " our reasonable belief that there is such a dispute, Sun Life HK reserves the right to withhold the payment of Mental Incapacity Benefit until such dispute is resolved. 18 The Mental Incapacity Benefit Recipient must be (a) aged 18 or above at the time of applying for the designation of Mental Incapacity Benefit Recipient and (b) the policy owner’s spouse, parent, child, sibling, grandparent, grandchild,"
+      },
+      {
+        "page": 14,
+        "pattern": "(?:Cash Value|GCV|Surrender Value)",
+        "context": "t: Accumulated Guaranteed Cash Coupon with interest: USD63,453 USD154,538 USD17,677 Projected total surrender value: Projected total surrender value: Projected total surrender value: Projected total surrender value: Projected total surrender value: USD1,285,716 USD4,363,481 (1,029% of single premium) (3,491% of single premium) USD100,000 USD151,180 USD371,697 (80% of single premium) (121% of single premium) (297"
+      },
+      {
+        "page": 14,
+        "pattern": "(?:Death Benefit|Coverage)",
+        "context": "After Mrs. A passes away, Mr. A passes away. As Mr. A designated purchases Guaranteed breakeven the coverage to her son, Mr. C, Mr. C becomes the new policy Mrs. A (wife, age 60) as the beneficiary RoyalFortune she then designated her son, owner and the new insured. Mr. C and selected Continuation Option as the Mr. C (age 45) as the policy (age 65) can withdraw16 for Death Benefit Settlement Option when o"
+      },
+      {
+        "page": 14,
+        "pattern": "(?:Premium|Payment)",
+        "context": "ortune Case study Wealth accumulation with early guaranteed breakeven Mr. A Notional Amount (single premium): USD125,000 Mr. and Mrs. A, both 40-year-old working professionals at high points in their career, they have Age 40 Premium payment term: Single pay a 5-year-old son, C. Although they have already set money aside for C’s future education, they would like to make their savings and investments go fu"
+      },
+      {
+        "page": 15,
+        "pattern": "(?:Cash Value|GCV|Surrender Value)",
+        "context": "ased on the Notional Amount Premium Structure • Single premium equals to Notional Amount Guaranteed Cash Value any accumulated Guaranteed Cash Coupon with interest any cash value of accumulated Reversionary Bonus Maturity Benefit / Surrender Value any cash value of Terminal Bonus any amount in the Value Lock-in Account the amount of any loans with interest 14"
+      },
+      {
+        "page": 15,
+        "pattern": "(?:Premium|Payment)",
+        "context": "rmation Important information About Sun Life RoyalFortune Key product information Plan RoyalFortune Premium Payment Term Single premium Minimum Notional Amount USD125,000 Issue Age Age 0-80 Policy Currency USD The earlier of To age 120 of the current insured Benefit Term or To 120 years since the issue (for Single Life) or the current date of the policy younger insured (for Joint Life); Premium Payment M"
+      },
+      {
+        "page": 16,
+        "pattern": "(?:Cash Value|GCV|Surrender Value)",
+        "context": "tion About Sun Life RoyalFortune Plan RoyalFortune Mental Incapacity Benefit Percentage (Guaranteed Cash Value on the date of claim approval any accumulated Guaranteed Cash Coupon with interest any cash value of accumulated Reversionary Bonus Mental Incapacity Benefit any amount in the Value Lock-in Account any cash value of Terminal Bonus) the amount of any loans with interest* * Only applicable if the Men"
+      },
+      {
+        "page": 16,
+        "pattern": "(?:Death Benefit|Coverage)",
+        "context": "on the date of death of the Designated Insured + any face value of accumulated Reversionary Bonus + Death Benefit any face value of Terminal Bonus + any accumulated Guaranteed Cash Coupon with interest - any amount in the Value Lock-in Account the amount of any loans with interest 15"
+      },
+      {
+        "page": 16,
+        "pattern": "(?:Premium|Payment)",
+        "context": "if the Mental Incapacity Benefit Percentage is 100% The higher of b) Guaranteed Cash Value a) Total premium paid or on the date of death of the Designated Insured + any face value of accumulated Reversionary Bonus + Death Benefit any face value of Terminal Bonus + any accumulated Guaranteed Cash Coupon with interest - any amount in the Value Lock-in Account the amount of any loans with interest 15"
+      },
+      {
+        "page": 17,
+        "pattern": "(?:Fixed Income|Equity|Bond)",
+        "context": ", credit events, price fluctuations in performance. Other factors^ include, but are not limited non-fixed income assets, and foreign exchange to, claims experience, taxes, expenses and policyholder fluctuations. Please see the Investment Philosophy for persistency experience. more details on the investment policies, objectives and strategy in relation to the investments of the Favourable and unfavourable expe"
+      },
+      {
+        "page": 18,
+        "pattern": "(?:Asset|Portfolio|Investment).*?Mix",
+        "context": "lying assets will therefore be affected. We invest globally to achieve geographical diversification Asset Class Target Asset Mix benefits and intend to have a higher relative allocation in the US and Asia-Pacific. Geographical diversification Fixed Income Assets 80%-100% results in a more stable investment return over the long term. The actual asset mix percentages and geographical allocation may fluctuate depending on marke"
+      },
+      {
+        "page": 18,
+        "pattern": "(?:Fixed Income|Equity|Bond)",
+        "context": "of the assets are invested in fixed intended to optimize long-term value to the income, return from fixed income assets will be used to policyholders with a suitable level of risk; and to achieve purchase the equity-like investments and derivatives, the main objective of delivering a fair chance of meeting such that the return of the total underlying assets will be the illustrated non-guaranteed benefits in a"
+      },
+      {
+        "page": 19,
+        "pattern": "(?:Cash Value|GCV|Surrender Value)",
+        "context": "licy loans and interest exceeds the than fixed income assets. You should note the sum of Guaranteed Cash Value and the amount of investment philosophy as disclosed in this brochure, the accumulated Guaranteed Cash Coupon and which will affect the returns on this basic plan. The interest (if any) and the amount in the Value savings component of this basic plan is subject to Lock-in Account (if any); risks an"
+      },
+      {
+        "page": 19,
+        "pattern": "(?:Premium|Payment)",
+        "context": "e an amount significantly less than Life Hong Kong Limited and your benefits are subject the single premium paid towards your policy. to the paying ability of Sun Life Hong Kong Limited. In the event that we become insolvent and unable 2. Any transaction involving conversion between policy to meet the contractual obligation under the policy, currency and other currencies would be exposed to you may lose "
+      },
+      {
+        "page": 19,
+        "pattern": "(?:Fixed Income|Equity|Bond)",
+        "context": "the 3. This basic plan may make certain portion of its earliest of the following: investment in non-fixed income assets. Returns of non-fixed income assets are generally more volatile a. accumulated policy loans and interest exceeds the than fixed income assets. You should note the sum of Guaranteed Cash Value and the amount of investment philosophy as disclosed in this brochure, the accumulated Guaranteed Ca"
+      },
+      {
+        "page": 20,
+        "pattern": "(?:Death Benefit|Coverage)",
+        "context": "alized terms and full terms and informing you or your representative about the expiry conditions of coverage. date of the cooling-off period, whichever is earlier, and (2) no refund of any premium and levy paid can be made if any payment from the Company under the policy has been made prior to the request for cancellation. 19"
+      },
+      {
+        "page": 20,
+        "pattern": "(?:Premium|Payment)",
+        "context": "ou are not fully satisfied with your policy, you have the required to pay a levy on their insurance premium for right to cancel your policy within the cooling-off period. all new and inforce policies collected by the Insurance By giving us a written request, your policy will then be Authority through insurance companies. The applicable cancelled and any premium and levy paid will be refunded, levy rate w"
+      }
+    ]
+  },
+  "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃": {
+    "file": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "tables": [],
+        "text_tables": []
+      },
+      {
+        "page": 2,
+        "tables": [],
+        "text_tables": []
+      },
+      {
+        "page": 3,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 2,
+            "sample": [
+              [
+                "3 儲蓄及退休收入\n活享儲蓄計劃\n價值保障選項 紅利及分紅鎖定選項和\n滿足您多變的需要 紅利及分紅解鎖選項\n配合多變的理財需要\n市場罕有#\n我們明白計劃有時候趕不上變化。為助您確保有充足資金 您的資產來之不易，尤其面對市場波動，更應牢牢保護。\n應付日後需要，由第6個保單年度終結後起，您可在不減 透過活享儲蓄計劃的「紅利及分紅鎖定選項」，您可轉移\n少保單的基本金額之情況下，提取任何非保證復歸紅利 任何復歸紅利及終期分紅的最新現金價值至您的紅利\n部分或全部的最新現金價值*以轉移至您的價值保障戶口。 及分紅鎖定戶口，並以非保證利率賺取利息，獲享潛在\n您更可提取部分保證現金價值及任何相應的非保證終期 回報。您可由第15個保單年度終結後起，於每個保單年度\n分紅的現金價值以轉移至您的價值保障戶口，然而，保單 終結後30日內行使此選項一次。\n的基本金額及將來價值將會隨之減少*。\n在不減少保單的基本金額之情況下，您可隨時從紅利\n在您從價值保障戶口作出任何現金提取前，轉移金額可於 及分紅鎖定戶口提取現金，以滿足不同人生階段的理財\n價值保障戶口賺取非保證利息，讓您在規劃未來時，多添 需要，盡享彈性。\n一份財務安心。有關「價值保障選項」之詳情，請參閱本\n產品簡介內的保障一覽。 紅利及分紅解鎖選項\n市場首創^\n您更可透過行使「紅利及分紅解鎖選項」，解鎖並轉\n移部分紅利及分紅鎖定戶口的最新價值為非保證復歸\n紅利和終期分紅，以配合您的理財需要。您可由鎖定\n紅利及分紅1年後起及於每個保單年度終結後30日內\n行使此選項一次。\n每個保單年度一次\n非保證復歸紅利和 於紅利及\n終期分紅 分紅鎖定戶口\n每個保單年度一次 作為保證金額",
+                "儲蓄及退休收入 4\n活享儲蓄計劃\n靈活現金提取 輕鬆累積財富\n提高資金流動\n活享儲蓄計劃助您輕鬆管理現金流。您可在不減少保單 活享儲蓄計劃是一份終身分紅保險計劃，提供保證及\n的基本金額之情況下，因應未來需要申請只提取任何 非保證回報。計劃提供保證現金價值，並由第3個保單\n復歸紅利的非保證現金價值*。您更可提取部分保證 年度終結後起，可每年公佈一次非保證復歸紅利及非\n現金價值及相應的任何終期分紅的非保證現金價值， 保證終期分紅，讓您安心享受財富增長。\n然而，保單的基本金額將會隨之減少*。\n特別紅利\n由第6個保單年度終結後起，您可轉移提取金額至價值 市場首創#\n保障戶口，以非保證利率賺取利息，日後隨時從價值\n保障戶口中提取金額。 由第11個保單年度終結後起，如您未曾於保單下行使紅\n利及分紅鎖定選項、價值保障選項及精神上無行為能力\n我們在作出任何支付前，將先扣除在保單下您尚欠我們 選項**，亦未曾從保單內提取任何保單價值，計劃可向\n的所有金額及所有未償還的欠款(如有)。 您的保單公佈額外的非保證特別紅利。有關特別紅利之\n詳情，請參閱本產品簡介內的保障一覽。\n# 截至2024年12月9日，與香港主要保險公司之儲蓄保險產品比較。\n* 如提取金額包括任何復歸紅利的現金價值，這將導致復歸紅利的面值減少，及本公司其後及將來可能公佈的任何復歸紅利將相應地減少。如提\n取金額包括部分保證現金價值及相應的終期分紅的現金價值，這將導致保單的基本金額減少。其後的保證現金價值、終期分紅的面值及現金價\n值及已付基本保費總和(用以計算身故賠償)將根據已下調的基本金額減少，及本公司其後及將來可能公佈的任何復歸紅利和任何終期分紅將相\n應地減少。因此，提取任何復歸紅利的現金價值或保證現金價值及相應的終期分紅的現金價值將導致保單的身故賠償、退保利益、將來價值及\n保單價值的可持續性和潛在增長隨之減少。\n^ 紅利及分紅解鎖選項由AIA於2022年10月5日在「盈御多元貨幣計劃2」中首創。\n** 如您的保單因行使精神上無行為能力選項而終止，特別紅利將可應予支付，惟特別紅利的所有其他條件皆獲符合(即未曾行使價值保障選項及\n紅利及分紅鎖定選項，以及未曾從保單提取任何保單價值)。"
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 2,
+            "cols": 1,
+            "sample": [
+              [
+                ""
+              ],
+              [
+                "每個保單年度一次\n非保證復歸紅利和 於紅利及\n終期分紅 分紅鎖定戶口\n每個保單年度一次 作為保證金額"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 4,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 2,
+            "sample": [
+              [
+                "55 儲儲蓄蓄及及退退休休收收入入\n活活享享儲儲蓄蓄計計劃劃\n按摯愛所需\n製訂賠償支付辦法\n若受保人不幸身故及沒有第二受保人成為新的受保人，\n我們將向您於保單選定的受益人支付身故賠償。\n此外，若受保人於保單的首年內因受保的意外不幸身故，\n除身故賠償外，活享儲蓄計劃將額外提供意外身故賠償，\n助摯愛減輕突如其來的財務負擔。\n除一筆過形式支付外，您可透過身故賠償支付辦法提供\n的選項，讓受益人分期領取身故賠償及意外身故賠償\n(如有)。您更可為每位受益人選定不同支付辦法，製訂\n每期領取的金額及指定首次領取賠償的日期。\n身故賠償支付辦法\n定額分期支付 定額遞增\n百分比分期支付\n於指定日期\n一筆過形式\n首次領取賠償\n支付部分金額，\n日期選項\n餘額以分期支付",
+                "儲儲蓄蓄及及退退休休收收入入 66\n活活享享儲儲蓄蓄計計劃劃\n為增添彈性，活享儲蓄計劃讓您根據您所指定的受益人年齡，選擇最後一期賠償的支付，滿足受益人在不同人生\n階段的需要。\n升級\n最後一期的支付（按受益人年齡）\n將按您於身故賠償支付辦法作出的 最後一期款項\n要求分期支付 以一筆過形式支付\n受益人靈活選項\n市場首創*\n若您已選擇身故賠償支付辦法，您亦可選擇「受益人靈活選項」，當(i)受益人已達您所選的指定年齡(「指定年齡」)；\n或(ii)受益人患上指定疾病，包括癌症、中風、心臟病、末期疾病及腎衰竭(「指定疾病」)(以較早者為準)，讓每位\n受益人按各自所需選擇支付辦法收取屬於他/她部分之尚未支付的身故賠償和意外身故賠償(如有)餘額。\n在受益人達指定年齡或 在受益人達指定年齡或\n患上指定疾病前 患上指定疾病後\n將按您於身故賠償支付辦法作出的 受益人可於受益人靈活選項下\n要求分期支付 選擇他/她的賠償支付辦法^\n* 受益人靈活選項之市場首創是指保單持有人可透過受益人靈活選項，當受益人達到保單持有人所選擇的指定年齡或受益人患上指定疾病時，讓受\n益人根據其選擇的支付辦法，收取身故賠償款項。截至2024年12月9日，此產品特點與香港主要保險公司之儲蓄保險產品比較為市場首創。\n^ 若受保人不幸身故及沒有第二受保人成為新的受保人，受益人可申請選擇屬於他/她部分之身故賠償和意外身故賠償(如有)的支付辦法，惟受益人\n提交申請時必須年滿18歲或以上。受益人於申請時可選之支付辦法受限於當時本公司於此選項下提供的支付辦法及我們當時的規則和條件。"
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 2,
+            "cols": 2,
+            "sample": [
+              [
+                "最後一期的支付（按受益人年齡）",
+                null
+              ],
+              [
+                "將按您於身故賠償支付辦法作出的\n要求分期支付",
+                "最後一期款項\n以一筆過形式支付"
+              ]
+            ]
+          },
+          {
+            "index": 2,
+            "rows": 3,
+            "cols": 2,
+            "sample": [
+              [
+                "身故賠償支付辦法",
+                null
+              ],
+              [
+                "定額分期支付",
+                "定額遞增\n百分比分期支付"
+              ],
+              [
+                "一筆過形式\n支付部分金額，\n餘額以分期支付",
+                "於指定日期\n首次領取賠償\n日期選項"
+              ]
+            ]
+          },
+          {
+            "index": 3,
+            "rows": 2,
+            "cols": 2,
+            "sample": [
+              [
+                "在受益人達指定年齡或 在受益人達指定年齡或\n患上指定疾病前 患上指定疾病後",
+                null
+              ],
+              [
+                "將按您於身故賠償支付辦法作出的\n要求分期支付",
+                "受益人可於受益人靈活選項下\n選擇他/她的賠償支付辦法^"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 5,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 2,
+            "sample": [
+              [
+                "7 儲蓄及退休收入\n活享儲蓄計劃\n末期疾病利益 更改受保人選項及\n為摯愛多添一份保障 第二受保人選項\n確保財富持續傳承\n活享儲蓄計劃提供「末期疾病利益」，以助舒緩因醫療 在原有受保人在生時及由第1個保單年度終結後起，受限\n開支而引致的財務負擔。若受保人不幸確診末期疾病， 於我們當時的規則和條件及批准，「更改受保人選項」可\n並預計會因該末期疾病在12個月內身故，我們會一次過 讓您無限次更改受保人為您的其他摯愛家人。保單將持續\n向您預先支付身故賠償金額作為末期疾病利益。若末期 生效，而保單價值將在不受影響的情況下由後代繼承，\n疾病利益一經支付，基本保單不會支付身故賠償。當支付 助您輕鬆傳承財富。\n末期疾病利益後，活享儲蓄計劃保單下所有保障將會\n終止。末期疾病利益將於受保人85歲生日當天或緊接 透過「第二受保人選項」，您可在原有受保人在生時，\n其後之保單週年日時自動終止。 指定一位摯愛家人為第二受保人。您可於原有受保人在生\n時無限次指定、轉換或移除第二受保人。若原有受保人\n不幸身故，受限於我們的批准，第二受保人可成為新的\n受保人，而保單將繼續生效和保單價值將不受影響，保障\n您的財富，傳承後代。",
+                "儲蓄及退休收入 8\n活享儲蓄計劃\n精神上無行為能力選項\n惠及摯愛家人\n無懼未知\n倘若您受精神問題所困擾，可能需要資金支付開支，\n活享儲蓄計劃特設「精神上無行為能力選項」。您可以\n預先指定保單價值之指定百分比及一位年滿18歲或以上\n的家庭成員作為指定代領人。倘若您被診斷為永久精神\n上無行為能力人士，在我們批准指定代領人的申請後及\n受限於適用法律及我們當時的規則及條件，指定代領人\n可獲支付金額相等於您指定的保單價值之指定百分比。\n我們在此選項下作出任何支付前，將先扣除在保單下您\n尚欠我們的所有金額及所有未償還的欠款(如有)。\n額外保障 倍添安心\n您可以於活享儲蓄計劃外選擇附加契約，倘若受保人不\n幸在60歲前完全及永久殘廢，我們可豁免您活享儲蓄\n計劃保單將來所須繳付的保費，為你提供支援。\n此外，您還可選擇在保單附加上「付款人保障附加\n契約」，若您於60歲前不幸身故或被診斷為完全及\n永久殘廢，我們將豁免您活享儲蓄計劃保單將來所須\n繳付的保費，直至受保人25歲為止。\n請參閱本產品簡介之保障一覽，瞭解有關產品特點\n詳情。"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 6,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 3,
+            "cols": 9,
+            "sample": [
+              [
+                null,
+                "9 儲蓄及退休收入\n活享儲蓄計劃\n案例\n個案一\n保單持有人和受保人： Helen(45歲)，已婚，育有一女(13歲)\n投保活享儲蓄計劃： 5年保費繳付期，每年保費20,000美元，總保費100,000美元",
+                null,
+                null,
+                null,
+                "儲蓄及退休收入 10\n活享儲蓄計劃\n(以下個案乃假設並只作舉例說明及參考之用，實際派發的紅利及分紅並非保證，其公佈金額由本公司全權決定，並受保單的條款約束。)\nHelen的生活充實而繁忙，缺乏時間規劃未來目標和管理財富。為了有效利用資金，她決定投保活享儲蓄計劃，\n在財富增值同時，可享流動資金以應付未來需要。\n價值保障 紅利及分紅 非保證退保 保證 預期退保\n戶口價值 鎖定戶口價值 發還金額 現金價值 發還總額",
+                null,
+                null,
+                null
+              ],
+              [
+                "",
+                "保單繕發\n保單年度\nHelen投保\n活享儲蓄計劃，\n總保費為\n100,000美元。",
+                "9\nHelen發現女兒\nStephanie有興趣\n於完成5年護理學\n學士學位後進修\n碩士學位。\nHelen透過\n價值保障選項1，\n提取16,000美元\n轉移至價值保障\n戶口，預留充足\n資金支持\nStephanie實現\n目標，同時賺取\n潛在利息，盡享\n理財彈性。",
+                "10\nStephanie決定修讀2年碩士課程。\nHelen從價值保障戶口中提取8,000美元2 ，支付首年學費。\n總現金提取\n8,000 美元2\n8,752\n8,560 美元\n8,368 美元\n29,218美 美元 元 46,440 美元 66,021 美元\n63,300 美元4 63,300 美元4 63,300 美元4\n預期退保 預期退保 預期退保\n發還總額 發還總額 發還總額\n100,886 118,300 138,073\n美元3 美元3 美元3\n1.09 1.26 1.46\n倍 倍 倍\n相比已繳總保費 相比已繳總保費 相比已繳總保費\n現時假設的\n悲觀情景 樂觀情景\n投資回報",
+                "Helen從價值保障戶\n總現金提取\n16,560 美元2\n31,366\n美元\n65,380 美元4\n預期退保\n發還總額\n96,746\n美元3\n1.13\n倍\n相比已繳總保費\n悲觀情景",
+                "11\n口中提取所有餘額2 ，支付第二年學費。\n總現金提取 總現金提取\n16,860 美元2 17,163 美元2\n76,295\n52,165 美元\n美元\n65,380 美元4 65,380 美元4\n預期退保 預期退保\n發還總額 發還總額\n117,545 141,675\n美元3 美元3\n1.34 1.59\n倍 倍\n相比已繳總保費 相比已繳總保費\n現時假設的\n樂觀情景\n投資回報",
+                "18\n63歲時，Helen\n計劃於65歲退休，\n並準備家庭旅行\n慶祝。\n她行使紅利及分紅\n鎖定選項5，轉移\n復歸紅利及終期\n分紅的最新現金\n價值的40%至紅利\n及分紅鎖定戶口，\n讓她一邊賺取潛在\n利息，一邊享受\n財務保障，安心\n規劃家庭旅行。",
+                "20\nHelen決定從紅利及分紅鎖定戶口中提取19,000美元2 ，以\n應付家庭旅行的開支。\n總現金提取 總現金提取 總現金提取\n35,560 美元2 35,860 美元2 36,163 美元2\n68,440\n美元\n28,807\n美元\n159,321\n556 美元\n美元 86,488\n35,810 美元\n美元\n101,860 美元4 101,860 美元4 101,860 美元4\n預期退保 預期退保 預期退保\n發還總額 發還總額 發還總額\n138,226 217,155 329,621\n美元3 美元3 美元3\n173,786 253,015 365,784\n美元 美元 美元\n(包括保證金額 (包括保證金額 (包括保證金額\n101,860美元及 101,860美元及 101,860美元及\n非保證金額 非保證金額 非保證金額\n71,926美元) 151,155美元) 263,924美元)\n1.74 2.53 3.66\n倍 倍 倍\n相比已繳總保費 相比已繳總保費 相比已繳總保費\n現時假設的\n悲觀情景 樂觀情景\n投資回報",
+                ""
+              ],
+              [
+                null,
+                "1. 由第6個保單年度終結後起，您可透過價值保障選項轉移提取金額至價值保障戶口以非保證利率賺取利息。此個案所示，從保單提取以轉移至\n價值保障戶口的現金僅包括非保證復歸紅利。因此，基本金額將不會減少。請參閱本產品簡介之保障一覽，瞭解有關價值保障選項的規則和條\n件之詳情。\n2. 在活享儲蓄計劃下，轉移至價值保障戶口和紅利及分紅鎖定戶口之現金提取金額並非保證，實際現金提取的金額會根據實際應支付之非保證利\n益而可能有所不同。任何現金提取將首先由價值保障戶口(如有)及/或紅利及分紅鎖定戶口(如有)餘額中扣除，然後由任何可套現之復歸紅利的\n現金價值(「可套現之紅利現金價值」)(由第3個保單年度終結後公佈)中扣除，若任何提取超過可套現之紅利現金價值的餘額，則從保證現金\n價值及任何終期分紅的現金價值(由第3個保單年度終結後公佈)中扣除，此舉會令保單之基本金額減少。因此，其後的保證現金價值、復歸\n紅利(如有)及終期分紅(如有)的面值及現金價值及用以計算身故賠償的已付基本保費總和將根據減少後之基本金額而降低，而金額會較沒有\n現金提取之預期價值少。請聯絡您的財務策劃顧問或本公司獲取有關以上現金提取個案詳情之說明文件。當提取全部退保發還總額時，此保單\n將會終止。",
+                null,
+                null,
+                null,
+                "3. 此個案內的預期退保發還總額為保單的保證現金價值加上 (i) 復歸紅利(如有)及終期分紅(如有)的非保證現金價值；(ii) 價值保障戶口價值(如有)；\n及(iii)紅利及分紅鎖定戶口價值(如有)之總和，及根據不同情景之投資回報假設下的預期退保發還金額、紅利率及分紅率計算。不同情景之投\n資回報假設下的預期退保發還金額、紅利率及分紅率只作舉例說明之用，並不反映未來表現亦並非保證。業務過去或現有表現不應解讀成未來\n表現的指標。於整個保單期內確實應支付的復歸紅利及終期分紅之面值及現金價值可能每年不同，其金額由本公司全權決定，有可能受不同因\n素影響而高於或低於過往已公佈的金額，及有可能低於或高於以上所示。以上的例子假設整個保單年期內沒有任何保單貸款，沒有支付特別紅\n利，亦沒有行使紅利及分紅解鎖選項以及精神上無行為能力選項，並且假設所有保費於到期時已被全數繳付。保單持有人須於特定保單年度終\n結時退保方可獲取以上所示金額。當提取全部退保發還總額後，此保單將會終止。\n4. 此保證現金價值是根據每個保單年度終結時預期的基本金額來計算。每次部分退保後的實際基本金額將會少於每個保單年度預期的數字。\n5. 由第15個保單年度終結後起，您可選擇行使紅利及分紅鎖定選項並以非保證利率賺取利息。請參閱本產品簡介之保障一覽，瞭解有關紅利及分\n紅鎖定選項的規則和條件之詳情。\n上述個案所示之所有數字均以四捨五入方式計算至整數。",
+                null,
+                null,
+                null
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 2,
+            "cols": 1,
+            "sample": [
+              [
+                ""
+              ],
+              [
+                ""
+              ]
+            ]
+          },
+          {
+            "index": 2,
+            "rows": 1,
+            "cols": 4,
+            "sample": [
+              [
+                "",
+                "",
+                "",
+                ""
+              ]
+            ]
+          },
+          {
+            "index": 3,
+            "rows": 2,
+            "cols": 1,
+            "sample": [
+              [
+                ""
+              ],
+              [
+                ""
+              ]
+            ]
+          },
+          {
+            "index": 4,
+            "rows": 1,
+            "cols": 5,
+            "sample": [
+              [
+                "",
+                "",
+                "總現金提取\n8,000 美元2",
+                "",
+                ""
+              ]
+            ]
+          },
+          {
+            "index": 5,
+            "rows": 4,
+            "cols": 1,
+            "sample": [
+              [
+                "159,321\n美元"
+              ],
+              [
+                "101,860 美元4"
+              ],
+              [
+                "預期退保\n發還總額\n329,621\n美元3"
+              ]
+            ]
+          },
+          {
+            "index": 6,
+            "rows": 5,
+            "cols": 1,
+            "sample": [
+              [
+                ""
+              ],
+              [
+                "86,488\n美元"
+              ],
+              [
+                "101,860 美元4"
+              ]
+            ]
+          },
+          {
+            "index": 7,
+            "rows": 4,
+            "cols": 1,
+            "sample": [
+              [
+                "46,440\n美元"
+              ],
+              [
+                "63,300 美元4"
+              ],
+              [
+                "預期退保\n發還總額\n118,300\n美元3"
+              ]
+            ]
+          },
+          {
+            "index": 8,
+            "rows": 4,
+            "cols": 1,
+            "sample": [
+              [
+                "66,021\n美元"
+              ],
+              [
+                "63,300 美元4"
+              ],
+              [
+                "預期退保\n發還總額\n138,073\n美元3"
+              ]
+            ]
+          },
+          {
+            "index": 9,
+            "rows": 4,
+            "cols": 1,
+            "sample": [
+              [
+                ""
+              ],
+              [
+                "65,380 美元4"
+              ],
+              [
+                "預期退保\n發還總額\n117,545\n美元3"
+              ]
+            ]
+          },
+          {
+            "index": 10,
+            "rows": 4,
+            "cols": 1,
+            "sample": [
+              [
+                ""
+              ],
+              [
+                "65,380 美元4"
+              ],
+              [
+                "預期退保\n發還總額\n141,675\n美元3"
+              ]
+            ]
+          },
+          {
+            "index": 11,
+            "rows": 3,
+            "cols": 1,
+            "sample": [
+              [
+                "101,860 美元4"
+              ],
+              [
+                "預期退保\n發還總額\n138,226\n美元3"
+              ],
+              [
+                "173,786\n美元\n(包括保證金額\n101,860美元及\n非保證金額\n71,926美元)\n1.74\n倍\n相比已繳總保費"
+              ]
+            ]
+          },
+          {
+            "index": 12,
+            "rows": 3,
+            "cols": 1,
+            "sample": [
+              [
+                "63,300 4\n美元"
+              ],
+              [
+                "預期退保\n發還總額\n100,886\n美元3"
+              ],
+              [
+                "1.09\n倍\n相比已繳總保費"
+              ]
+            ]
+          },
+          {
+            "index": 13,
+            "rows": 3,
+            "cols": 1,
+            "sample": [
+              [
+                "65,380 美元4"
+              ],
+              [
+                "預期退保\n發還總額\n96,746\n美元3"
+              ],
+              [
+                "1.13\n倍\n相比已繳總保費"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 7,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 5,
+            "cols": 11,
+            "sample": [
+              [
+                null,
+                "11 儲蓄及退休收入\n活享儲蓄計劃\n個案二\n保單持有人及受保人： David(40歲)，已婚，沒有子女\n投保活享儲蓄計劃： 5年保費繳付期，每年保費50,000美元，總保費250,000美元",
+                null,
+                null,
+                null,
+                null,
+                "儲蓄及退休收入 12\n活享儲蓄計劃\nDavid明白隨著世界變遷，他的需要也會隨之而變。他決定投保活享儲蓄計劃，主動為不可預見的未來做好準備，多添\n一份安心。\n非保證退保 保證 預期退保 非保證 保證 預期身故賠償\n發還金額 現金價值 發還總額 身故賠償 身故賠償 總額",
+                null,
+                null,
+                null,
+                null
+              ],
+              [
+                "",
+                "保單繕發\n保單年度\nDavid投保活享儲蓄計劃，總保費\n為250,000美元，並指定太太\nSharon(35歲)為受益人。",
+                "10\nDavid決定提取100,000美元1，實踐創業夢。\n他同時選擇身故賠償支付辦法及受益人靈活選項4 ，\n並預設受益人指定年齡為70歲。若David身故，\nSharon達70歲時可選所需的支付辦法以收取尚未\n支付的身故賠償餘額，應付不測。\n總現金提取\n100,000 美元1\n51,246 美元 84,136 美元 125,069 美元\n120,321 美元3 130,534 美元3 138,601 美元3\n預期退保 預期退保 預期退保\n發還總額 發還總額 發還總額\n171,567 214,670 263,670\n美元2 美元2 美元2\n1.09 1.26 1.45\n倍 倍 倍\n相比已繳總保費 相比已繳總保費 相比已繳總保費\n現時假設的\n悲觀情景 樂觀情景\n投資回報",
+                "16\nDavid決定提取55,000美元1，拓",
+                null,
+                null,
+                "展業務。",
+                null,
+                "30 保單終止\nDavid不幸身故。\n於David預設的身故賠償支付辦法4下，Sharon每年\n收取8,000美元的身故賠償。\n總現金提取\n155,000 美元1\n1,717,393\n美元\n712,410\n美元\n218,306\n美元\n167,384 美元3 198,528 美元3 219,880 美元3\n預期身故 預期身故 預期身故\n賠償總額 賠償總額 賠償總額\n385,690 910,938 1,937,273\n美元5 美元5 美元5\n2.16 4.26 8.37\n倍 倍 倍\n相比已繳總保費 相比已繳總保費 相比已繳總保費\n現時假設的\n悲觀情景 樂觀情景\n投資回報",
+                "Sharon 70歲\nSharon達70歲的指定年齡時透過受益人靈活選項4，\n選擇以每年3%的遞增百分比收取尚未支付的身故\n賠償餘額，應付日常開支。\n總現金提取\n155,000 美元1\nSharon年屆100歲時收取預期身故賠償總額\n432,021\n美元5\n及身故賠償餘額\n24,695 1,238,863 5,125,230\n美元 美元 美元\n611,716 1,825,884 5,712,251\n美元 美元 美元\n(包括保證金額 (包括保證金額 (包括保證金額\n229,345美元及 239,676美元及 247,012美元及\n非保證金額 非保證金額 非保證金額\n382,371美元) 1,586,208美元) 5,465,239美元)\n2.45 7.30 22.85\n倍 倍 倍\n相比已繳總保費 相比已繳總保費 相比已繳總保費\n現時假設的\n悲觀情景 樂觀情景\n投資回報",
+                ""
+              ],
+              [
+                null,
+                null,
+                null,
+                "",
+                "",
+                "總現金提取\n155,000\n美元",
+                "1",
+                "",
+                null,
+                null,
+                null
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "rows": 2,
+            "cols": 1,
+            "sample": [
+              [
+                ""
+              ],
+              [
+                ""
+              ]
+            ]
+          },
+          {
+            "index": 2,
+            "rows": 2,
+            "cols": 1,
+            "sample": [
+              [
+                ""
+              ],
+              [
+                ""
+              ]
+            ]
+          },
+          {
+            "index": 3,
+            "rows": 2,
+            "cols": 1,
+            "sample": [
+              [
+                ""
+              ],
+              [
+                ""
+              ]
+            ]
+          },
+          {
+            "index": 4,
+            "rows": 5,
+            "cols": 5,
+            "sample": [
+              [
+                "",
+                "",
+                "總現金提取\n155,000 美元1",
+                "",
+                ""
+              ],
+              [
+                null,
+                null,
+                null,
+                "1,717,393\n美元",
+                null
+              ],
+              [
+                null,
+                null,
+                null,
+                "219,880 美元3",
+                null
+              ]
+            ]
+          },
+          {
+            "index": 5,
+            "rows": 2,
+            "cols": 5,
+            "sample": [
+              [
+                "",
+                "總現金提取\n155,000 美元1",
+                null,
+                "",
+                ""
+              ],
+              [
+                "",
+                null,
+                "",
+                null,
+                null
+              ]
+            ]
+          },
+          {
+            "index": 6,
+            "rows": 1,
+            "cols": 5,
+            "sample": [
+              [
+                "",
+                "",
+                "總現金提取\n100,000 美元1",
+                "",
+                ""
+              ]
+            ]
+          },
+          {
+            "index": 7,
+            "rows": 4,
+            "cols": 1,
+            "sample": [
+              [
+                "712,410\n美元"
+              ],
+              [
+                "198,528 美元3"
+              ],
+              [
+                "預期身故\n賠償總額\n910,938\n美元5"
+              ]
+            ]
+          },
+          {
+            "index": 8,
+            "rows": 4,
+            "cols": 4,
+            "sample": [
+              [
+                "n年",
+                "屆100歲時收取預期身故\n432,021\n美元5\n及身故賠償餘額",
+                "賠",
+                "償總額"
+              ],
+              [
+                null,
+                "432,021\n美元5\n及身故賠償餘額",
+                null,
+                null
+              ],
+              [
+                null,
+                null,
+                "5,125,230\n美元",
+                null
+              ]
+            ]
+          },
+          {
+            "index": 9,
+            "rows": 4,
+            "cols": 1,
+            "sample": [
+              [
+                "218,306\n美元"
+              ],
+              [
+                "167,384 美元3"
+              ],
+              [
+                "預期身故\n賠償總額\n385,690\n美元5"
+              ]
+            ]
+          },
+          {
+            "index": 10,
+            "rows": 3,
+            "cols": 1,
+            "sample": [
+              [
+                "120,321 美元3"
+              ],
+              [
+                "預期退保\n發還總額\n171,567\n美元2"
+              ],
+              [
+                "1.09\n倍\n相比已繳總保費"
+              ]
+            ]
+          },
+          {
+            "index": 11,
+            "rows": 3,
+            "cols": 1,
+            "sample": [
+              [
+                "130,534 美元3"
+              ],
+              [
+                "預期退保\n發還總額\n214,670\n美元2"
+              ],
+              [
+                "1.26\n倍\n相比已繳總保費"
+              ]
+            ]
+          },
+          {
+            "index": 12,
+            "rows": 3,
+            "cols": 1,
+            "sample": [
+              [
+                "124,916 美元3"
+              ],
+              [
+                "預期退保\n發還總額\n169,360\n美元2"
+              ],
+              [
+                "1.30\n倍\n相比已繳總保費"
+              ]
+            ]
+          },
+          {
+            "index": 13,
+            "rows": 3,
+            "cols": 1,
+            "sample": [
+              [
+                "148,158 美元3"
+              ],
+              [
+                "預期退保\n發還總額\n289,207\n美元2"
+              ],
+              [
+                "1.78\n倍\n相比已繳總保費"
+              ]
+            ]
+          },
+          {
+            "index": 14,
+            "rows": 2,
+            "cols": 1,
+            "sample": [
+              [
+                "1,238,863\n美元"
+              ],
+              [
+                "1,825,884\n美元\n(包括保證金額\n239,676美元及\n非保證金額\n1,586,208美元)\n7.30\n倍\n相比已繳總保費"
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 8,
+        "tables": [],
+        "text_tables": []
+      },
+      {
+        "page": 9,
+        "tables": [],
+        "text_tables": []
+      },
+      {
+        "page": 10,
+        "tables": [],
+        "text_tables": []
+      },
+      {
+        "page": 11,
+        "tables": [],
+        "text_tables": []
+      },
+      {
+        "page": 12,
+        "tables": [
+          {
+            "index": 0,
+            "rows": 1,
+            "cols": 2,
+            "sample": [
+              [
+                "",
+                ""
+              ]
+            ]
+          }
+        ],
+        "text_tables": []
+      },
+      {
+        "page": 13,
+        "tables": [],
+        "text_tables": []
+      },
+      {
+        "page": 14,
+        "tables": [],
+        "text_tables": []
+      },
+      {
+        "page": 15,
+        "tables": [],
+        "text_tables": []
+      }
+    ],
+    "tables_found": 37,
+    "text_tables_found": 0,
+    "potential_table_text": []
+  }
+}

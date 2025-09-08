@@ -1,0 +1,431 @@
+{
+  "results": {
+    "RoyalFortune_Product Brochure_EN": {
+      "Insurer Entity Name": {
+        "answer": "Sun Life Hong Kong Limited",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Product Name": {
+        "answer": "RoyalFortune",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Minimum Premium": {
+        "answer": "9",
+        "confidence": "High",
+        "method": "pattern_matching",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Maximum Premium": {
+        "answer": "[Not Found]",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Policy Currency": {
+        "answer": "USD",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Policy Term": {
+        "answer": "120",
+        "confidence": "High",
+        "method": "pattern_matching",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Issue Age": {
+        "answer": "0 80",
+        "confidence": "High",
+        "method": "pattern_matching",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Premium Term(s)": {
+        "answer": "Single premium",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Number of Insured Lives": {
+        "answer": "Single Life",
+        "confidence": "High",
+        "method": "pattern_matching",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Product Type": {
+        "answer": "Participating insurance plan",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Issuing Jurisdiction": {
+        "answer": "Hong Kong SAR",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Withdrawal Features": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Death Settlement Feature(s)": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Additional Benefits": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Contract Governing Law": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Product Asset Mix": {
+        "answer": "80%",
+        "confidence": "High",
+        "method": "section_search",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Backdating Availability?": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Non-Medical Limit": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Prepayment Applicable?": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Policy Currency(ies)": {
+        "answer": "USD",
+        "confidence": "Medium",
+        "method": "inference",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Issue Age and Age Methodology": {
+        "answer": "0 80 (Age Next Birthday)",
+        "confidence": "Medium",
+        "method": "inference",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Change of Life Assured Feature(s)": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Day 1 GCV": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Total Surrender Value Components": {
+        "answer": "100,000",
+        "confidence": "Medium",
+        "method": "alias_search",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Total Death Benefit Components": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Product Base": {
+        "answer": "Participating Whole Life",
+        "confidence": "Medium",
+        "method": "inference",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Product Asset Manager": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Product Asset Custodian": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Insurer Financial Strength Rating(s)": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Guaranteed Surrender Value": {
+        "answer": "7",
+        "confidence": "Medium",
+        "method": "alias_search",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Guaranteed Death Benefit": {
+        "answer": "100% of premium paid",
+        "confidence": "Medium",
+        "method": "inference",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Living Benefits": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Riders Available": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      },
+      "Free Look Period": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune_Product Brochure_EN"
+      }
+    },
+    "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃": {
+      "Insurer Entity Name": {
+        "answer": "友邦保險(國際)有限公司",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Product Name": {
+        "answer": "活享儲蓄計劃",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Minimum Premium": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Maximum Premium": {
+        "answer": "[Not Found]",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Policy Currency": {
+        "answer": "美元",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Policy Term": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Issue Age": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Premium Term(s)": {
+        "answer": "5年",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Number of Insured Lives": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Product Type": {
+        "answer": "儲蓄保險計劃",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Issuing Jurisdiction": {
+        "answer": "香港",
+        "confidence": "High",
+        "method": "direct_mapping",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Withdrawal Features": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Death Settlement Feature(s)": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Additional Benefits": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Contract Governing Law": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Product Asset Mix": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Backdating Availability?": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Non-Medical Limit": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Prepayment Applicable?": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Policy Currency(ies)": {
+        "answer": "美元",
+        "confidence": "Medium",
+        "method": "inference",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Issue Age and Age Methodology": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Change of Life Assured Feature(s)": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Day 1 GCV": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Total Surrender Value Components": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Total Death Benefit Components": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Product Base": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Product Asset Manager": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Product Asset Custodian": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Insurer Financial Strength Rating(s)": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Guaranteed Surrender Value": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Guaranteed Death Benefit": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Living Benefits": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Riders Available": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      },
+      "Free Look Period": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃"
+      }
+    }
+  },
+  "statistics": {
+    "total_fields": 68,
+    "successful": 24,
+    "success_rate": "35.3%",
+    "extraction_methods": {
+      "layer1": 14,
+      "layer2": 4,
+      "layer3": 0,
+      "table": 0,
+      "section": 1,
+      "alias": 3,
+      "inference": 5
+    },
+    "cost": "$0.0000"
+  }
+}

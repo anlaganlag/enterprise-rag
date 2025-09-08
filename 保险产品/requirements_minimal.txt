@@ -1,0 +1,31 @@
+# 保险产品RAG MVP系统依赖 - 最小化版本
+# Python 3.8+
+
+# PDF处理
+pypdf2==3.0.1
+pdfplumber==0.10.3
+
+# LangChain生态 - 让pip自动解决版本
+langchain
+langchain-community
+langchain-openai
+langsmith<0.1.0  # 限制langsmith版本以兼容langchain 0.1.0
+
+# 向量存储
+faiss-cpu==1.7.4
+
+# OpenAI
+openai
+
+# 数据处理
+pandas
+numpy
+
+# 文本处理
+tiktoken  # 让pip自动选择兼容版本
+python-dotenv
+
+# 工具库
+tqdm
+pydantic
+typing-extensions

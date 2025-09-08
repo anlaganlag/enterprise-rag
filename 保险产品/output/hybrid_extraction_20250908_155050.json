@@ -1,0 +1,350 @@
+{
+  "results": {
+    "RoyalFortune": {
+      "Insurer Entity Name": {
+        "answer": "Sun Life Hong Kong Limited",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "RoyalFortune"
+      },
+      "Product Name": {
+        "answer": "RoyalFortune",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "RoyalFortune"
+      },
+      "Minimum Premium": {
+        "answer": "125,000",
+        "confidence": "High",
+        "method": "layer2_pattern",
+        "source": "RoyalFortune"
+      },
+      "Maximum Premium": {
+        "answer": "[Not Found]",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "RoyalFortune"
+      },
+      "Policy Currency": {
+        "answer": "USD",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "RoyalFortune"
+      },
+      "Policy Term": {
+        "answer": "120",
+        "confidence": "High",
+        "method": "layer2_pattern",
+        "source": "RoyalFortune"
+      },
+      "Issue Age": {
+        "answer": "0-80",
+        "confidence": "High",
+        "method": "layer2_pattern",
+        "source": "RoyalFortune"
+      },
+      "Premium Term(s)": {
+        "answer": "Single premium",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "RoyalFortune"
+      },
+      "Number of Insured Lives": {
+        "answer": "Single Life",
+        "confidence": "High",
+        "method": "layer2_pattern",
+        "source": "RoyalFortune"
+      },
+      "Product Type": {
+        "answer": "Participating insurance plan",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "RoyalFortune"
+      },
+      "Issuing Jurisdiction": {
+        "answer": "Hong Kong SAR",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "RoyalFortune"
+      },
+      "Withdrawal Features": {
+        "answer": "- Partial withdrawal feature available\n- Full withdrawal option possible\n- No specific conditions or restrictions mentioned for withdrawals\n- Flexibility in withdrawals to support financial needs",
+        "confidence": "Medium",
+        "method": "layer3_ai",
+        "source": "RoyalFortune"
+      },
+      "Death Settlement Feature(s)": {
+        "answer": "- Lump Sum: A one-time payment of the death benefit in full upon the insured's passing.\n- Installments: Death benefit paid out in regular installments over a specified period.\n- Other options may include annuity payments, income for life, or a combination of lump sum and installments.",
+        "confidence": "Medium",
+        "method": "layer3_ai",
+        "source": "RoyalFortune"
+      },
+      "Additional Benefits": {
+        "answer": "- Mental Incapacity Benefit\n- Emergency Assistance",
+        "confidence": "Medium",
+        "method": "layer3_ai",
+        "source": "RoyalFortune"
+      },
+      "Contract Governing Law": {
+        "answer": "Contract Governing Law: The text does not explicitly mention the governing law of the contract.",
+        "confidence": "Medium",
+        "method": "layer3_ai",
+        "source": "RoyalFortune"
+      },
+      "Product Asset Mix": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune"
+      },
+      "Backdating Availability?": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune"
+      },
+      "Non-Medical Limit": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune"
+      },
+      "Prepayment Applicable?": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune"
+      },
+      "Policy Currency(ies)": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune"
+      },
+      "Issue Age and Age Methodology": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune"
+      },
+      "Change of Life Assured Feature(s)": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune"
+      },
+      "Day 1 GCV": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune"
+      },
+      "Total Surrender Value Components": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune"
+      },
+      "Total Death Benefit Components": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune"
+      },
+      "Product Base": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune"
+      },
+      "Product Asset Manager": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "RoyalFortune"
+      }
+    },
+    "AIA_FlexiAchiever": {
+      "Insurer Entity Name": {
+        "answer": "AIA Insurance (International) Limited",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Product Name": {
+        "answer": "FlexiAchiever Savings Plan",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Minimum Premium": {
+        "answer": "2,000",
+        "confidence": "High",
+        "method": "layer2_pattern",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Maximum Premium": {
+        "answer": "[Not Found]",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Policy Currency": {
+        "answer": "USD",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Policy Term": {
+        "answer": "終身",
+        "confidence": "High",
+        "method": "layer2_pattern",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Issue Age": {
+        "answer": "15日至75歲",
+        "confidence": "High",
+        "method": "layer2_pattern",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Premium Term(s)": {
+        "answer": "5 years",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Number of Insured Lives": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Product Type": {
+        "answer": "Participating savings plan",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Issuing Jurisdiction": {
+        "answer": "Hong Kong SAR",
+        "confidence": "High",
+        "method": "layer1_direct",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Withdrawal Features": {
+        "answer": "- Partial withdrawal feature available from the 6th policy year onwards\n- Allows for withdrawal of any non-guaranteed cash value without reducing the basic sum assured\n- Option to transfer any non-guaranteed cash value to a value protection account\n- Full withdrawal feature allowing for partial or full withdrawal of the latest cash value\n- Restrictions on reducing the basic sum assured with withdrawals\n- Conditions for accessing non-guaranteed cash values and potential returns from the 15th policy year onwards",
+        "confidence": "Medium",
+        "method": "layer3_ai",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Death Settlement Feature(s)": {
+        "answer": "1. Lump Sum Option: Allows beneficiaries to receive the death benefit in a single payment.\n   \n2. Installment Option: Provides beneficiaries with the death benefit in multiple payments over a specified period.\n\n3. Value Protection Option: Allows for the transfer of part of the locked-in dividends and bonuses to non-guaranteed returns, aligning with financial needs.\n\n4. Unlocking Dividends and Bonuses Option: Enables the unlocking and transfer of part of the locked-in dividends and bonuses to non-guaranteed returns and end-term bonuses, adaptable to financial requirements.",
+        "confidence": "Medium",
+        "method": "layer3_ai",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Additional Benefits": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Contract Governing Law": {
+        "answer": "The Contract Governing Law for the insurance policy mentioned in the text is subject to the applicable laws and the insurer's rules and conditions at the time of the claim, specifically regarding the provisions related to changes in the insured person and the benefits for terminal illness and mental incapacity.",
+        "confidence": "Medium",
+        "method": "layer3_ai",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Product Asset Mix": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Backdating Availability?": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Non-Medical Limit": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Prepayment Applicable?": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Policy Currency(ies)": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Issue Age and Age Methodology": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Change of Life Assured Feature(s)": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Day 1 GCV": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Total Surrender Value Components": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Total Death Benefit Components": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Product Base": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      },
+      "Product Asset Manager": {
+        "answer": "[Not Found]",
+        "confidence": "Low",
+        "method": "not_found",
+        "source": "AIA_FlexiAchiever"
+      }
+    }
+  },
+  "statistics": {
+    "layer1": 14,
+    "layer2": 7,
+    "layer3": 7,
+    "not_found": 26
+  },
+  "summary": {
+    "total": 54,
+    "success": 28,
+    "success_rate": "51.9%",
+    "cost": "$0.0140",
+    "breakdown": {
+      "Layer 1 (Direct)": "14 (25.9%)",
+      "Layer 2 (Pattern)": "7 (13.0%)",
+      "Layer 3 (AI)": "7 (13.0%)",
+      "Not Found": "26 (48.1%)"
+    }
+  }
+}

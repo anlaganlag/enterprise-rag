@@ -1,0 +1,36 @@
+2025-09-08 11:44:14,233 - __main__ - INFO - === 开始构建向量存储 ===
+2025-09-08 11:44:14,233 - __main__ - INFO - 步骤1: 处理PDF文档
+2025-09-08 11:44:14,233 - pdf_processor - INFO - 开始处理: D:\桌面\RAG\保险产品\AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃.pdf
+2025-09-08 11:44:14,243 - pdf_processor - INFO - 正在处理 AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃.pdf, 共 15 页
+2025-09-08 11:44:16,270 - pdf_processor - INFO - 成功处理: AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃.pdf
+2025-09-08 11:44:16,273 - pdf_processor - INFO - 开始处理: D:\桌面\RAG\保险产品\RoyalFortune_Product Brochure_EN.pdf
+2025-09-08 11:44:16,286 - pdf_processor - INFO - 正在处理 RoyalFortune_Product Brochure_EN.pdf, 共 23 页
+2025-09-08 11:44:19,033 - pdf_processor - INFO - 成功处理: RoyalFortune_Product Brochure_EN.pdf
+2025-09-08 11:44:19,033 - __main__ - INFO - 步骤2: 准备文档索引
+2025-09-08 11:44:19,033 - pdf_processor - INFO - 准备了 238 个文档块用于索引
+2025-09-08 11:44:19,033 - __main__ - INFO - 创建了 238 个文档块
+2025-09-08 11:44:19,033 - __main__ - INFO - 步骤3: 构建向量存储
+2025-09-08 12:32:55,056 - __main__ - INFO - === 开始构建向量存储 ===
+2025-09-08 12:32:55,056 - __main__ - INFO - 步骤1: 处理PDF文档
+2025-09-08 12:32:55,056 - pdf_processor - INFO - 开始处理: D:\桌面\RAG\保险产品\AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃.pdf
+2025-09-08 12:32:55,056 - pdf_processor - INFO - 正在处理 AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃.pdf, 共 15 页
+2025-09-08 12:32:57,003 - pdf_processor - INFO - 成功处理: AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃.pdf
+2025-09-08 12:32:57,003 - pdf_processor - INFO - 开始处理: D:\桌面\RAG\保险产品\RoyalFortune_Product Brochure_EN.pdf
+2025-09-08 12:32:57,017 - pdf_processor - INFO - 正在处理 RoyalFortune_Product Brochure_EN.pdf, 共 23 页
+2025-09-08 12:32:59,647 - pdf_processor - INFO - 成功处理: RoyalFortune_Product Brochure_EN.pdf
+2025-09-08 12:32:59,658 - __main__ - INFO - 步骤2: 准备文档索引
+2025-09-08 12:32:59,658 - pdf_processor - INFO - 准备了 238 个文档块用于索引
+2025-09-08 12:32:59,658 - __main__ - INFO - 创建了 238 个文档块
+2025-09-08 12:32:59,658 - __main__ - INFO - 步骤3: 构建向量存储
+2025-09-08 13:46:56,042 - __main__ - INFO - === 开始构建向量存储 ===
+2025-09-08 13:46:56,042 - __main__ - INFO - 步骤1: 处理PDF文档
+2025-09-08 13:46:56,042 - pdf_processor - INFO - 开始处理: D:\桌面\RAG\保险产品\AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃.pdf
+2025-09-08 13:46:56,048 - pdf_processor - INFO - 正在处理 AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃.pdf, 共 15 页
+2025-09-08 13:46:57,949 - pdf_processor - INFO - 成功处理: AIA FlexiAchieverSavingsPlan_tc-活享儲蓄計劃.pdf
+2025-09-08 13:46:57,949 - pdf_processor - INFO - 开始处理: D:\桌面\RAG\保险产品\RoyalFortune_Product Brochure_EN.pdf
+2025-09-08 13:46:57,949 - pdf_processor - INFO - 正在处理 RoyalFortune_Product Brochure_EN.pdf, 共 23 页
+2025-09-08 13:47:00,538 - pdf_processor - INFO - 成功处理: RoyalFortune_Product Brochure_EN.pdf
+2025-09-08 13:47:00,538 - __main__ - INFO - 步骤2: 准备文档索引
+2025-09-08 13:47:00,538 - pdf_processor - INFO - 准备了 238 个文档块用于索引
+2025-09-08 13:47:00,538 - __main__ - INFO - 创建了 238 个文档块
+2025-09-08 13:47:00,538 - __main__ - INFO - 步骤3: 构建向量存储

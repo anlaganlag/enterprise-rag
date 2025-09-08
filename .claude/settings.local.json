@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__thinking__sequentialthinking"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

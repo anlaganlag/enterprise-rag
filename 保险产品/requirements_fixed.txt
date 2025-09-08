@@ -1,0 +1,31 @@
+# 保险产品RAG MVP系统依赖 - 修复版本冲突
+# Python 3.8+
+
+# PDF处理
+pypdf2==3.0.1
+pdfplumber==0.10.3
+
+# LangChain生态 - 兼容版本
+langchain==0.2.11
+langchain-community==0.2.10
+langchain-openai==0.1.20
+langsmith==0.1.93
+
+# 向量存储
+faiss-cpu==1.7.4
+
+# OpenAI
+openai==1.35.10
+
+# 数据处理
+pandas==2.1.4
+numpy==1.24.3
+
+# 文本处理 - 更新tiktoken版本
+tiktoken==0.7.0  # 修复：从0.5.2升级到0.7.0以兼容langchain-openai
+python-dotenv==1.0.0
+
+# 工具库
+tqdm==4.66.1
+pydantic==2.5.3
+typing-extensions==4.9.0
