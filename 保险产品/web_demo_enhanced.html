@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保险RAG智能问答系统 - 增强版</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header-left h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        
+        .header-left p {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .stats {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .main-layout {
+            display: grid;
+            grid-template-columns: 350px 1fr 400px;
+            gap: 25px;
+        }
+        
+        /* 左侧问题分类面板 */
+        .questions-panel {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-height: 800px;
+            overflow-y: auto;
+        }
+        
+        .questions-panel h2 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        .question-category {
+            margin-bottom: 20px;
+        }
+        
+        .category-title {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .category-icon {
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+        
+        .question-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .question-item {
+            padding: 8px 12px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            color: #333;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+        
+        .question-item:hover {
+            background: #e9ecef;
+            border-color: #667eea;
+            transform: translateX(5px);
+        }
+        
+        .question-item.selected {
+            background: #667eea;
+            color: white;
+        }
+        
+        .answerable {
+            color: #28a745;
+        }
+        
+        .unanswerable {
+            color: #dc3545;
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        /* 中间主面板 */
+        .main-panel {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tab-nav {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .tab-btn {
+            padding: 10px 20px;
+            background: none;
+            border: none;
+            color: #666;
+            font-size: 14px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .tab-btn.active {
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #667eea;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* 问答区域 */
+        .qa-section {
+            margin-bottom: 25px;
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .question-input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        .question-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .ask-btn {
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .ask-btn:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+        
+        .ask-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        /* 快速选择按钮 */
+        .quick-questions {
+            margin-bottom: 20px;
+        }
+        
+        .quick-title {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .quick-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .quick-btn {
+            padding: 6px 12px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #495057;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .quick-btn:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        /* 答案显示区 */
+        .answer-section {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            min-height: 200px;
+        }
+        
+        .answer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .confidence-badge {
+            padding: 4px 12px;
+            background: #28a745;
+            color: white;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        
+        .confidence-low {
+            background: #ffc107;
+        }
+        
+        .confidence-very-low {
+            background: #dc3545;
+        }
+        
+        .answer-content {
+            color: #333;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+        
+        .sources {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #dee2e6;
+        }
+        
+        .source-item {
+            padding: 8px;
+            background: white;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        /* 右侧信息面板 */
+        .info-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .info-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-card h3 {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .doc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .doc-item {
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .doc-name {
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .doc-meta {
+            color: #666;
+            font-size: 11px;
+        }
+        
+        /* 加载动画 */
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .loading.active {
+            display: block;
+        }
+        
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 1200px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            .questions-panel,
+            .info-panel {
+                max-height: none;
+            }
+        }
+        
+        /* 工具提示 */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -100px;
+            font-size: 12px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        /* 上传区域 */
+        .upload-section {
+            border: 2px dashed #dee2e6;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .upload-section.dragover {
+            border-color: #667eea;
+            background: #f8f9fa;
+        }
+        
+        .upload-icon {
+            font-size: 48px;
+            color: #dee2e6;
+            margin-bottom: 15px;
+        }
+        
+        .upload-text {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .file-input {
+            display: none;
+        }
+        
+        .upload-btn {
+            padding: 10px 25px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .upload-btn:hover {
+            background: #5a67d8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="header-left">
+                <h1>🤖 保险产品智能问答系统</h1>
+                <p>基于RAG技术的企业级PoC演示 | 支持中英文智能问答</p>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value" id="docCount">0</div>
+                    <div class="stat-label">文档数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="chunkCount">0</div>
+                    <div class="stat-label">分块数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="answerRate">81.5%</div>
+                    <div class="stat-label">回答率</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 主布局 -->
+        <div class="main-layout">
+            <!-- 左侧问题分类面板 -->
+            <div class="questions-panel">
+                <h2>📋 可回答问题列表</h2>
+                
+                <!-- 产品信息 -->
+                <div class="question-category">
+                    <div class="category-title">
+                        <span class="category-icon">📦</span>
+                        <span>产品信息 (9/9)</span>
+                    </div>
+                    <div class="question-list">
+                        <div class="question-item answerable" onclick="askQuestion('What is the insurer entity name?')">
+                            保险公司名称 ✓
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('What is the product name?')">
+                            产品名称 ✓
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('What is the product asset mix?')">
+                            产品资产配置 ✓
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('What is the product type?')">
+                            产品类型 ✓
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('What is the issuing jurisdiction?')">
+                            发行地区 ✓
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 计划详情 -->
+                <div class="question-category">
+                    <div class="category-title">
+                        <span class="category-icon">📄</span>
+                        <span>计划详情 (9/11)</span>
+                    </div>
+                    <div class="question-list">
+                        <div class="question-item answerable" onclick="askQuestion('What is the minimum premium?')">
+                            最低保费 ✓
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('What is the issue age range?')">
+                            投保年龄 ✓
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('What are the policy currencies?')">
+                            保单货币 ✓
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('What are the premium terms?')">
+                            缴费期限 ✓
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('What are the death settlement features?')">
+                            身故赔付特点 ✓
+                        </div>
+                        <div class="question-item unanswerable">
+                            被保险人数量 ✗
+                        </div>
+                        <div class="question-item unanswerable">
+                            更换被保险人功能 ✗
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 分红型终身寿险 -->
+                <div class="question-category">
+                    <div class="category-title">
+                        <span class="category-icon">💰</span>
+                        <span>分红型终身寿险 (3/3)</span>
+                    </div>
+                    <div class="question-list">
+                        <div class="question-item answerable" onclick="askQuestion('What is the Day 1 GCV?')">
+                            首日保证现金价值 ✓
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('What are the surrender value components?')">
+                            退保价值组成 ✓
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('What are the death benefit components?')">
+                            身故赔付组成 ✓
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 其他详情 -->
+                <div class="question-category">
+                    <div class="category-title">
+                        <span class="category-icon">ℹ️</span>
+                        <span>其他详情 (1/4)</span>
+                    </div>
+                    <div class="question-list">
+                        <div class="question-item answerable" onclick="askQuestion('What is the contract governing law?')">
+                            合同适用法律 ✓
+                        </div>
+                        <div class="question-item unanswerable">
+                            回溯可用性 ✗
+                        </div>
+                        <div class="question-item unanswerable">
+                            免体检限额 ✗
+                        </div>
+                        <div class="question-item unanswerable">
+                            附加保障 ✗
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 综合性问题 -->
+                <div class="question-category">
+                    <div class="category-title">
+                        <span class="category-icon">💡</span>
+                        <span>综合性问题</span>
+                    </div>
+                    <div class="question-list">
+                        <div class="question-item answerable" onclick="askQuestion('请介绍一下RoyalFortune产品')">
+                            产品介绍
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('What are the key features?')">
+                            主要特点
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('RoyalFortune的优势是什么？')">
+                            产品优势
+                        </div>
+                        <div class="question-item answerable" onclick="askQuestion('How does the guaranteed cash value work?')">
+                            保证现金价值机制
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 中间主面板 -->
+            <div class="main-panel">
+                <!-- 标签页导航 -->
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="switchTab('qa')">智能问答</button>
+                    <button class="tab-btn" onclick="switchTab('search')">文档搜索</button>
+                    <button class="tab-btn" onclick="switchTab('upload')">文档上传</button>
+                </div>
+                
+                <!-- 问答标签页 -->
+                <div class="tab-content active" id="qa-tab">
+                    <div class="qa-section">
+                        <!-- 快速问题选择 -->
+                        <div class="quick-questions">
+                            <div class="quick-title">热门问题：</div>
+                            <div class="quick-buttons">
+                                <button class="quick-btn" onclick="askQuestion('RoyalFortune的最低保费是多少？')">
+                                    最低保费
+                                </button>
+                                <button class="quick-btn" onclick="askQuestion('投保年龄范围是什么？')">
+                                    投保年龄
+                                </button>
+                                <button class="quick-btn" onclick="askQuestion('保证现金价值是多少？')">
+                                    保证现金价值
+                                </button>
+                                <button class="quick-btn" onclick="askQuestion('身故赔付有哪些特点？')">
+                                    身故赔付
+                                </button>
+                                <button class="quick-btn" onclick="askQuestion('产品的优势是什么？')">
+                                    产品优势
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- 输入区域 -->
+                        <div class="input-group">
+                            <input type="text" 
+                                   class="question-input" 
+                                   id="questionInput"
+                                   placeholder="请输入您的问题（支持中英文）..."
+                                   onkeypress="handleEnter(event)">
+                            <button class="ask-btn" onclick="submitQuestion()" id="askBtn">
+                                提问
+                            </button>
+                        </div>
+                        
+                        <!-- 答案显示区 -->
+                        <div class="answer-section">
+                            <div class="loading" id="loading">
+                                <div class="spinner"></div>
+                                <p>正在思考中...</p>
+                            </div>
+                            
+                            <div id="answerContent">
+                                <div class="answer-header">
+                                    <h3>AI回答</h3>
+                                    <span class="confidence-badge" id="confidenceBadge" style="display:none;"></span>
+                                </div>
+                                <div class="answer-content" id="answerText">
+                                    请选择左侧问题或输入您的问题...
+                                </div>
+                                <div class="sources" id="sources" style="display:none;">
+                                    <strong>信息来源：</strong>
+                                    <div id="sourcesList"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 搜索标签页 -->
+                <div class="tab-content" id="search-tab">
+                    <div class="search-section">
+                        <div class="input-group">
+                            <input type="text" 
+                                   class="question-input" 
+                                   id="searchInput"
+                                   placeholder="输入关键词搜索文档...">
+                            <button class="ask-btn" onclick="searchDocuments()">
+                                搜索
+                            </button>
+                        </div>
+                        <div id="searchResults" class="answer-section">
+                            <p>输入关键词开始搜索...</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 上传标签页 -->
+                <div class="tab-content" id="upload-tab">
+                    <div class="upload-section" 
+                         id="uploadArea"
+                         ondrop="handleDrop(event)"
+                         ondragover="handleDragOver(event)"
+                         ondragleave="handleDragLeave(event)">
+                        <div class="upload-icon">📁</div>
+                        <div class="upload-text">
+                            拖放PDF文件到此处<br>或
+                        </div>
+                        <input type="file" 
+                               id="fileInput" 
+                               class="file-input" 
+                               accept=".pdf"
+                               onchange="handleFileSelect(event)">
+                        <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                            选择文件
+                        </button>
+                    </div>
+                    <div id="uploadStatus" style="margin-top: 20px;"></div>
+                </div>
+            </div>
+            
+            <!-- 右侧信息面板 -->
+            <div class="info-panel">
+                <!-- 已上传文档 -->
+                <div class="info-card">
+                    <h3>📚 已上传文档</h3>
+                    <div class="doc-list" id="docList">
+                        <div class="doc-item">
+                            <div>
+                                <div class="doc-name">RoyalFortune_Product_Brochure_EN.pdf</div>
+                                <div class="doc-meta">Sun Life | 119个分块</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 系统状态 -->
+                <div class="info-card">
+                    <h3>⚡ 系统状态</h3>
+                    <div class="doc-list">
+                        <div class="doc-item">
+                            <span>API状态</span>
+                            <span style="color: #28a745;">● 在线</span>
+                        </div>
+                        <div class="doc-item">
+                            <span>ElasticSearch</span>
+                            <span style="color: #28a745;">● 正常</span>
+                        </div>
+                        <div class="doc-item">
+                            <span>中文优化</span>
+                            <span style="color: #28a745;">● 启用</span>
+                        </div>
+                        <div class="doc-item">
+                            <span>响应时间</span>
+                            <span id="responseTime">~2秒</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 使用提示 -->
+                <div class="info-card">
+                    <h3>💡 使用提示</h3>
+                    <ul style="font-size: 13px; color: #666; padding-left: 20px; line-height: 1.8;">
+                        <li>点击左侧问题快速提问</li>
+                        <li>支持中英文混合查询</li>
+                        <li>绿色✓表示可回答的问题</li>
+                        <li>红色✗表示需要更多文档</li>
+                        <li>置信度>70%为高质量答案</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // API配置
+        const API_BASE = 'http://localhost:8000';
+        const API_CN_BASE = 'http://localhost:8001';
+        
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            loadStats();
+            loadDocuments();
+            setInterval(loadStats, 30000); // 每30秒更新统计
+        });
+        
+        // 加载统计信息
+        async function loadStats() {
+            try {
+                const response = await fetch(`${API_BASE}/api/stats`);
+                const data = await response.json();
+                
+                document.getElementById('docCount').textContent = data.total_documents || 0;
+                document.getElementById('chunkCount').textContent = data.total_chunks || 0;
+            } catch (error) {
+                console.error('加载统计失败:', error);
+            }
+        }
+        
+        // 加载文档列表
+        async function loadDocuments() {
+            try {
+                const response = await fetch(`${API_BASE}/api/documents`);
+                const data = await response.json();
+                
+                const docList = document.getElementById('docList');
+                docList.innerHTML = '';
+                
+                data.documents.forEach(doc => {
+                    const docItem = document.createElement('div');
+                    docItem.className = 'doc-item';
+                    docItem.innerHTML = `
+                        <div>
+                            <div class="doc-name">${doc.doc_name}</div>
+                            <div class="doc-meta">${doc.chunk_count}个分块</div>
+                        </div>
+                    `;
+                    docList.appendChild(docItem);
+                });
+            } catch (error) {
+                console.error('加载文档列表失败:', error);
+            }
+        }
+        
+        // 切换标签页
+        function switchTab(tabName) {
+            // 更新标签按钮状态
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // 切换内容
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(`${tabName}-tab`).classList.add('active');
+        }
+        
+        // 快速提问
+        function askQuestion(question) {
+            document.getElementById('questionInput').value = question;
+            submitQuestion();
+        }
+        
+        // 提交问题
+        async function submitQuestion() {
+            const input = document.getElementById('questionInput');
+            const question = input.value.trim();
+            
+            if (!question) {
+                alert('请输入问题');
+                return;
+            }
+            
+            // 显示加载状态
+            document.getElementById('loading').classList.add('active');
+            document.getElementById('answerContent').style.display = 'none';
+            document.getElementById('askBtn').disabled = true;
+            
+            try {
+                // 检测语言并选择合适的API
+                const isChinese = /[\u4e00-\u9fa5]/.test(question);
+                const apiUrl = isChinese && API_CN_BASE ? 
+                    `${API_CN_BASE}/api/qa_cn` : 
+                    `${API_BASE}/api/qa`;
+                
+                const startTime = Date.now();
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        question: question,
+                        include_sources: true
+                    })
+                });
+                
+                const data = await response.json();
+                const responseTime = ((Date.now() - startTime) / 1000).toFixed(1);
+                
+                // 更新响应时间
+                document.getElementById('responseTime').textContent = `~${responseTime}秒`;
+                
+                // 显示答案
+                displayAnswer(data);
+                
+            } catch (error) {
+                console.error('提问失败:', error);
+                document.getElementById('answerText').innerHTML = 
+                    '<span style="color: #dc3545;">抱歉，处理您的问题时出现错误。请稍后重试。</span>';
+                document.getElementById('answerContent').style.display = 'block';
+            } finally {
+                document.getElementById('loading').classList.remove('active');
+                document.getElementById('askBtn').disabled = false;
+            }
+        }
+        
+        // 显示答案
+        function displayAnswer(data) {
+            document.getElementById('answerContent').style.display = 'block';
+            
+            // 显示答案文本
+            document.getElementById('answerText').innerHTML = 
+                data.answer.replace(/\n/g, '<br>');
+            
+            // 显示置信度
+            const confidenceBadge = document.getElementById('confidenceBadge');
+            const confidence = (data.confidence * 100).toFixed(1);
+            confidenceBadge.textContent = `置信度: ${confidence}%`;
+            confidenceBadge.style.display = 'inline-block';
+            
+            // 设置置信度颜色
+            confidenceBadge.className = 'confidence-badge';
+            if (data.confidence < 0.3) {
+                confidenceBadge.classList.add('confidence-very-low');
+            } else if (data.confidence < 0.7) {
+                confidenceBadge.classList.add('confidence-low');
+            }
+            
+            // 显示来源
+            if (data.sources && data.sources.length > 0) {
+                document.getElementById('sources').style.display = 'block';
+                const sourcesList = document.getElementById('sourcesList');
+                sourcesList.innerHTML = '';
+                
+                data.sources.forEach(source => {
+                    const sourceItem = document.createElement('div');
+                    sourceItem.className = 'source-item';
+                    sourceItem.innerHTML = `
+                        <strong>${source.doc_name}</strong> - 
+                        第${source.page_num}页 
+                        (相关度: ${source.score.toFixed(2)})
+                    `;
+                    sourcesList.appendChild(sourceItem);
+                });
+            } else {
+                document.getElementById('sources').style.display = 'none';
+            }
+        }
+        
+        // 搜索文档
+        async function searchDocuments() {
+            const searchInput = document.getElementById('searchInput').value.trim();
+            if (!searchInput) {
+                alert('请输入搜索关键词');
+                return;
+            }
+            
+            const resultsDiv = document.getElementById('searchResults');
+            resultsDiv.innerHTML = '<div class="spinner"></div><p>搜索中...</p>';
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/search`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        query: searchInput,
+                        size: 10
+                    })
+                });
+                
+                const results = await response.json();
+                
+                if (results.length === 0) {
+                    resultsDiv.innerHTML = '<p>未找到相关内容</p>';
+                } else {
+                    let html = `<h4>找到 ${results.length} 个结果</h4>`;
+                    results.forEach((result, index) => {
+                        html += `
+                            <div class="source-item">
+                                <strong>${index + 1}. ${result.doc_name}</strong> - 第${result.page_num}页<br>
+                                <small>${result.content.substring(0, 200)}...</small><br>
+                                <small style="color: #667eea;">相关度: ${result.score.toFixed(2)}</small>
+                            </div>
+                        `;
+                    });
+                    resultsDiv.innerHTML = html;
+                }
+            } catch (error) {
+                resultsDiv.innerHTML = '<p style="color: #dc3545;">搜索失败，请重试</p>';
+            }
+        }
+        
+        // 文件上传处理
+        function handleDragOver(e) {
+            e.preventDefault();
+            document.getElementById('uploadArea').classList.add('dragover');
+        }
+        
+        function handleDragLeave(e) {
+            e.preventDefault();
+            document.getElementById('uploadArea').classList.remove('dragover');
+        }
+        
+        function handleDrop(e) {
+            e.preventDefault();
+            document.getElementById('uploadArea').classList.remove('dragover');
+            
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                uploadFile(files[0]);
+            }
+        }
+        
+        function handleFileSelect(e) {
+            const files = e.target.files;
+            if (files.length > 0) {
+                uploadFile(files[0]);
+            }
+        }
+        
+        async function uploadFile(file) {
+            if (!file.name.endsWith('.pdf')) {
+                alert('只支持PDF文件');
+                return;
+            }
+            
+            const statusDiv = document.getElementById('uploadStatus');
+            statusDiv.innerHTML = '<div class="spinner"></div><p>上传中...</p>';
+            
+            const formData = new FormData();
+            formData.append('file', file);
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/upload`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                statusDiv.innerHTML = `
+                    <div style="color: #28a745;">
+                        ✓ 上传成功！<br>
+                        文件名: ${result.filename}<br>
+                        状态: ${result.status}
+                    </div>
+                `;
+                
+                // 刷新文档列表
+                setTimeout(() => {
+                    loadDocuments();
+                    loadStats();
+                }, 3000);
+                
+            } catch (error) {
+                statusDiv.innerHTML = `
+                    <div style="color: #dc3545;">
+                        ✗ 上传失败: ${error.message}
+                    </div>
+                `;
+            }
+        }
+        
+        // 回车键提交
+        function handleEnter(event) {
+            if (event.key === 'Enter') {
+                submitQuestion();
+            }
+        }
+    </script>
+</body>
+</html>

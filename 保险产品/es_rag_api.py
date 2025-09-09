@@ -83,6 +83,11 @@ async def serve_demo():
     """提供Web演示页面"""
     return FileResponse("web_demo.html")
 
+@app.get("/web_demo_enhanced.html")
+async def serve_demo_enhanced():
+    """提供增强版Web演示页面"""
+    return FileResponse("web_demo_enhanced.html")
+
 @app.get("/")
 async def root():
     """API根路径"""
