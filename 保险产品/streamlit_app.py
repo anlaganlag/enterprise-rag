@@ -98,10 +98,23 @@ PRESET_QUESTIONS = [
 @st.cache_resource
 def initialize_openai():
     """初始化OpenAI客户端"""
-    api_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
+    api_key = None
+    
+    # 尝试从多个来源获取API密钥
+    try:
+        # 先尝试从secrets获取
+        if hasattr(st, 'secrets') and "OPENAI_API_KEY" in st.secrets:
+            api_key = st.secrets["OPENAI_API_KEY"]
+    except Exception:
+        pass
+    
+    # 如果没有，从环境变量获取
     if not api_key:
-        return None
-    openai.api_key = api_key
+        api_key = os.getenv("OPENAI_API_KEY")
+    
+    if api_key:
+        openai.api_key = api_key
+    
     return api_key
 
 @st.cache_data
@@ -157,6 +170,15 @@ def create_vector_store(documents: List[Dict]):
 def answer_question(question: str, vector_store) -> Dict:
     """回答问题"""
     try:
+        # 确保API密钥已设置
+        if not os.getenv("OPENAI_API_KEY"):
+            return {
+                "question": question,
+                "answer": "请先设置OpenAI API密钥",
+                "sources": [],
+                "timestamp": datetime.now().isoformat()
+            }
+        
         llm = ChatOpenAI(
             model_name="gpt-3.5-turbo",
             temperature=0.1,
@@ -197,7 +219,8 @@ with st.sidebar:
     st.header("⚙️ 配置")
     
     # API密钥输入
-    if not st.secrets.get("OPENAI_API_KEY"):
+    api_key = initialize_openai()
+    if not api_key:
         api_key_input = st.text_input(
             "OpenAI API Key",
             type="password",
@@ -206,6 +229,7 @@ with st.sidebar:
         if api_key_input:
             os.environ["OPENAI_API_KEY"] = api_key_input
             st.success("API密钥已设置")
+            st.rerun()
     
     st.divider()
     
