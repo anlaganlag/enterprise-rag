@@ -310,20 +310,89 @@ st.markdown("### 基于RAG技术的企业级PoC演示 | 支持中英文智能问
 with st.sidebar:
     st.header("⚙️ 系统配置")
     
-    # API密钥
+    # API密钥管理
     api_key = initialize_openai()
-    if not api_key:
-        api_key_input = st.text_input(
-            "OpenAI API Key",
+    
+    # 创建一个可折叠的API配置区域
+    with st.expander("🔑 API密钥配置", expanded=not bool(api_key)):
+        if api_key:
+            # 显示当前API密钥状态
+            st.success("✅ API密钥已配置")
+            # 显示部分隐藏的密钥
+            masked_key = api_key[:10] + "..." + api_key[-4:] if len(api_key) > 14 else "***"
+            st.info(f"当前密钥: {masked_key}")
+            
+            # 提供重新配置选项
+            if st.button("🔄 重新配置API密钥", use_container_width=True):
+                # 清除现有密钥
+                if 'api_key' in st.session_state:
+                    del st.session_state.api_key
+                os.environ.pop("OPENAI_API_KEY", None)
+                st.rerun()
+        
+        # API密钥输入框
+        new_api_key = st.text_input(
+            "输入新的OpenAI API Key",
             type="password",
-            help="请输入您的OpenAI API密钥"
+            help="格式: sk-...",
+            placeholder="sk-proj-..."
         )
-        if api_key_input:
-            os.environ["OPENAI_API_KEY"] = api_key_input
-            st.success("✅ API密钥已设置")
-            st.rerun()
-    else:
-        st.success("✅ API密钥已配置")
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button("✅ 保存密钥", use_container_width=True, type="primary"):
+                if new_api_key and new_api_key.startswith("sk-"):
+                    os.environ["OPENAI_API_KEY"] = new_api_key
+                    st.session_state.api_key = new_api_key
+                    st.success("✅ API密钥已更新")
+                    time.sleep(1)
+                    st.rerun()
+                elif new_api_key:
+                    st.error("❌ 密钥格式不正确，应以'sk-'开头")
+        
+        with col2:
+            # 从.env文件重新加载
+            if st.button("📂 从.env加载", use_container_width=True):
+                try:
+                    from dotenv import load_dotenv
+                    load_dotenv(override=True)
+                    env_key = os.getenv("OPENAI_API_KEY")
+                    if env_key:
+                        os.environ["OPENAI_API_KEY"] = env_key
+                        st.session_state.api_key = env_key
+                        st.success("✅ 已从.env文件加载密钥")
+                        time.sleep(1)
+                        st.rerun()
+                    else:
+                        st.error("❌ .env文件中未找到OPENAI_API_KEY")
+                except Exception as e:
+                    st.error(f"❌ 加载失败: {str(e)}")
+        
+        # 测试API连接
+        if api_key or new_api_key:
+            if st.button("🧪 测试API连接", use_container_width=True):
+                test_key = new_api_key if new_api_key else api_key
+                with st.spinner("正在测试连接..."):
+                    try:
+                        # 测试API连接
+                        from openai import OpenAI
+                        client = OpenAI(api_key=test_key)
+                        # 发送一个简单的测试请求
+                        response = client.chat.completions.create(
+                            model="gpt-3.5-turbo",
+                            messages=[{"role": "user", "content": "Hi"}],
+                            max_tokens=5
+                        )
+                        st.success("✅ API连接成功！")
+                        st.info(f"模型响应: {response.choices[0].message.content}")
+                    except Exception as e:
+                        st.error(f"❌ API连接失败: {str(e)}")
+                        if "api_key" in str(e).lower():
+                            st.warning("💡 提示: 请检查API密钥是否正确")
+                        elif "rate" in str(e).lower():
+                            st.warning("💡 提示: API调用频率限制，请稍后再试")
+                        else:
+                            st.warning("💡 提示: 请检查网络连接或API密钥权限")
     
     st.divider()
     
