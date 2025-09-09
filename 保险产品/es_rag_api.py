@@ -88,6 +88,23 @@ async def serve_demo_enhanced():
     """提供增强版Web演示页面"""
     return FileResponse("web_demo_enhanced.html")
 
+@app.get("/health")
+async def health_check():
+    """健康检查端点"""
+    try:
+        # 检查ES连接
+        es_health = es.cluster.health()
+        return {
+            "status": "healthy",
+            "elasticsearch": es_health["status"],
+            "timestamp": datetime.now().isoformat()
+        }
+    except Exception as e:
+        return JSONResponse(
+            status_code=503,
+            content={"status": "unhealthy", "error": str(e)}
+        )
+
 @app.get("/")
 async def root():
     """API根路径"""
@@ -98,6 +115,7 @@ async def root():
             "upload": "/api/upload",
             "search": "/api/search",
             "qa": "/api/qa",
+            "health": "/health",
             "stats": "/api/stats",
             "health": "/api/health"
         }
