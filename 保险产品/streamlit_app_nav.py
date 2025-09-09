@@ -240,10 +240,11 @@ def answer_question_with_confidence(question: str, vector_store) -> Dict:
             max_tokens=500
         )
         
+        # 增加检索文档数量到10个
         qa_chain = RetrievalQA.from_chain_type(
             llm=llm,
             chain_type="stuff",
-            retriever=vector_store.as_retriever(search_kwargs={"k": 5}),
+            retriever=vector_store.as_retriever(search_kwargs={"k": 10}),
             return_source_documents=True
         )
         
@@ -252,18 +253,35 @@ def answer_question_with_confidence(question: str, vector_store) -> Dict:
         response_time = time.time() - start_time
         
         source_documents = result.get("source_documents", [])
-        confidence = 0.8 if source_documents else 0.3
-        if len(source_documents) >= 3:
-            confidence = 0.9
-        elif len(source_documents) >= 2:
-            confidence = 0.7
         
+        # 更精细的置信度计算
+        confidence = 0.3  # 基础置信度
+        if source_documents:
+            # 根据文档数量调整置信度
+            doc_count = len(source_documents)
+            if doc_count >= 8:
+                confidence = 0.95
+            elif doc_count >= 5:
+                confidence = 0.85
+            elif doc_count >= 3:
+                confidence = 0.75
+            elif doc_count >= 1:
+                confidence = 0.6
+        
+        # 处理所有源文档（最多10个）
         sources = []
-        for doc in source_documents[:3]:
+        for i, doc in enumerate(source_documents[:10], 1):
+            # 增加显示的文本长度到500字符
+            content = doc.page_content
+            # 清理文本，去除多余的换行和空格
+            content = ' '.join(content.split())
+            
             sources.append({
                 "doc_name": doc.metadata.get("source", "Unknown"),
-                "content": doc.page_content[:200] + "...",
-                "score": confidence
+                "content": content[:500] + ("..." if len(content) > 500 else ""),
+                "full_content": content,  # 保存完整内容
+                "score": 0.95 - (i * 0.05),  # 根据排序给出递减的相关度分数
+                "index": i
             })
         
         return {
@@ -479,11 +497,38 @@ if st.session_state.vector_store:
             </div>
             """, unsafe_allow_html=True)
             
+            # 显示所有信息来源（最多10个）
             if result["sources"]:
                 st.markdown("### 📚 信息来源")
-                for i, source in enumerate(result["sources"], 1):
-                    with st.expander(f"来源 {i}: {source['doc_name']}"):
-                        st.write(source["content"])
+                st.info(f"找到 {len(result['sources'])} 个相关文档片段")
+                
+                for source in result["sources"]:
+                    score = source.get('score', 0)
+                    if score >= 0.8:
+                        score_color = "🟢"
+                    elif score >= 0.6:
+                        score_color = "🟡"
+                    else:
+                        score_color = "🔴"
+                    
+                    with st.expander(
+                        f"{score_color} 来源 {source.get('index', '')} | {source['doc_name']} | 相关度: {score:.2%}",
+                        expanded=(source.get('index', 0) <= 3)
+                    ):
+                        st.markdown("**文档内容片段：**")
+                        st.text_area(
+                            "",
+                            value=source.get('full_content', source['content']),
+                            height=150,
+                            disabled=True,
+                            key=f"auto_source_{source.get('index', '')}_{id(source)}"
+                        )
+                        
+                        col1, col2 = st.columns(2)
+                        with col1:
+                            st.caption(f"📄 文档: {source['doc_name']}")
+                        with col2:
+                            st.caption(f"📊 相关度得分: {score:.2%}")
             
             st.divider()
         
@@ -559,12 +604,43 @@ if st.session_state.vector_store:
                     if "response_time" in result:
                         st.caption(f"⏱️ 响应时间: {result['response_time']:.2f}秒")
                     
+                    # 显示所有信息来源（最多10个）
                     if result["sources"]:
                         st.markdown("### 📚 信息来源")
-                        for i, source in enumerate(result["sources"], 1):
-                            with st.expander(f"来源 {i}: {source['doc_name']}"):
-                                st.write(source["content"])
-                                st.caption(f"相关度: {source['score']:.2f}")
+                        st.info(f"找到 {len(result['sources'])} 个相关文档片段")
+                        
+                        # 显示每个来源
+                        for source in result["sources"]:
+                            # 使用不同的颜色标记相关度
+                            score = source.get('score', 0)
+                            if score >= 0.8:
+                                score_color = "🟢"  # 高相关度
+                            elif score >= 0.6:
+                                score_color = "🟡"  # 中相关度
+                            else:
+                                score_color = "🔴"  # 低相关度
+                            
+                            # 创建可展开的区域显示每个来源
+                            with st.expander(
+                                f"{score_color} 来源 {source.get('index', '')} | {source['doc_name']} | 相关度: {score:.2%}",
+                                expanded=(source.get('index', 0) <= 3)  # 默认展开前3个
+                            ):
+                                # 显示内容
+                                st.markdown("**文档内容片段：**")
+                                st.text_area(
+                                    "",
+                                    value=source.get('full_content', source['content']),
+                                    height=150,
+                                    disabled=True,
+                                    key=f"source_content_{source.get('index', '')}_{id(source)}"
+                                )
+                                
+                                # 显示元信息
+                                col1, col2 = st.columns(2)
+                                with col1:
+                                    st.caption(f"📄 文档: {source['doc_name']}")
+                                with col2:
+                                    st.caption(f"📊 相关度得分: {score:.2%}")
                 
                 except Exception as e:
                     st.error(f"❌ 处理问题时出错: {str(e)}")
