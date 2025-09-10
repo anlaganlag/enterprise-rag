@@ -1186,11 +1186,12 @@ if st.session_state.vector_store:
                     ):
                         st.markdown("**文档内容片段：**")
                         st.text_area(
-                            "",
+                            "内容",
                             value=source.get('full_content', source['content']),
                             height=150,
                             disabled=True,
-                            key=f"auto_source_{source.get('index', '')}_{id(source)}"
+                            key=f"auto_source_{source.get('index', '')}_{id(source)}",
+                            label_visibility="collapsed"
                         )
                         
                         col1, col2 = st.columns(2)
@@ -1297,11 +1298,12 @@ if st.session_state.vector_store:
                                 # 显示内容
                                 st.markdown("**文档内容片段：**")
                                 st.text_area(
-                                    "",
+                                    "内容",
                                     value=source.get('full_content', source['content']),
                                     height=150,
                                     disabled=True,
-                                    key=f"source_content_{source.get('index', '')}_{id(source)}"
+                                    key=f"source_content_{source.get('index', '')}_{id(source)}",
+                                    label_visibility="collapsed"
                                 )
                                 
                                 # 显示元信息
