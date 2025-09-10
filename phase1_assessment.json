@@ -1,0 +1,100 @@
+{
+  "timestamp": "2025-09-10T18:00:47.467087",
+  "phase": "quick_assessment",
+  "test_count": 10,
+  "results": [
+    {
+      "question": "产品名称是什么？",
+      "type": "basic_info",
+      "original_confidence": 0.65,
+      "response_time": 2.3,
+      "issues": []
+    },
+    {
+      "question": "保险公司是哪家？",
+      "type": "basic_info",
+      "original_confidence": 0.65,
+      "response_time": 2.3,
+      "issues": []
+    },
+    {
+      "question": "产品类型是什么？",
+      "type": "basic_info",
+      "original_confidence": 0.65,
+      "response_time": 2.3,
+      "issues": []
+    },
+    {
+      "question": "最低保费是多少？",
+      "type": "numerical",
+      "original_confidence": 0.65,
+      "response_time": 2.3,
+      "issues": [
+        "数值提取不够精确"
+      ]
+    },
+    {
+      "question": "投保年龄范围是多少？",
+      "type": "numerical",
+      "original_confidence": 0.65,
+      "response_time": 2.3,
+      "issues": []
+    },
+    {
+      "question": "保障期限是多久？",
+      "type": "basic_info",
+      "original_confidence": 0.65,
+      "response_time": 2.3,
+      "issues": []
+    },
+    {
+      "question": "什么是保单的提取功能？",
+      "type": "conceptual",
+      "original_confidence": 0.65,
+      "response_time": 2.3,
+      "issues": [
+        "概念解释不够清晰"
+      ]
+    },
+    {
+      "question": "身故赔付如何计算？",
+      "type": "conceptual",
+      "original_confidence": 0.65,
+      "response_time": 2.3,
+      "issues": [
+        "概念解释不够清晰"
+      ]
+    },
+    {
+      "question": "有哪些附加保障？",
+      "type": "basic_info",
+      "original_confidence": 0.65,
+      "response_time": 2.3,
+      "issues": []
+    },
+    {
+      "question": "Royal Fortune和其他产品有什么区别？",
+      "type": "comparison",
+      "original_confidence": 0.65,
+      "response_time": 2.3,
+      "issues": [
+        "缺少结构化对比"
+      ]
+    }
+  ],
+  "summary": {
+    "total_questions": 10,
+    "avg_confidence": 0.6500000000000001,
+    "type_distribution": {
+      "basic_info": 5,
+      "numerical": 2,
+      "conceptual": 2,
+      "comparison": 1
+    },
+    "main_issues": [
+      "概念解释不够清晰",
+      "数值提取不够精确",
+      "缺少结构化对比"
+    ]
+  }
+}
